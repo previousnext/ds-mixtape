@@ -9,8 +9,8 @@ use Pinto\Attribute\Asset\Css;
 use Pinto\Attribute\DependencyOn;
 use Pinto\List\ObjectListInterface;
 
-enum MixtapeGlobal implements ObjectListInterface, StreamWrapperAssetInterface
-{
+enum MixtapeGlobal implements ObjectListInterface {
+
     use MixtapeListTrait;
 
     #[Css('constants.css', preprocess: true)]

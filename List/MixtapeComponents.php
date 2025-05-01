@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
-use Drupal\pinto\List\StreamWrapperAssetInterface;
 use Pinto\Attribute\Definition;
 use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
@@ -12,8 +11,8 @@ use Pinto\List\ObjectListInterface;
 use PreviousNext\Ds\Mixtape\Component;
 
 #[CanonicalProduct]
-enum MixtapeComponents implements ObjectListInterface, StreamWrapperAssetInterface
-{
+enum MixtapeComponents implements ObjectListInterface {
+
     use MixtapeListTrait;
 
     #[Definition(Component\Accordion\Accordion::class)]

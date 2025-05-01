@@ -4,15 +4,14 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
-use Drupal\pinto\List\StreamWrapperAssetInterface;
 use Pinto\Attribute\Definition;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
 use PreviousNext\Ds\Mixtape\Atom;
 
 #[CanonicalProduct]
-enum MixtapeAtoms implements ObjectListInterface, StreamWrapperAssetInterface
-{
+enum MixtapeAtoms implements ObjectListInterface {
+
     use MixtapeListTrait;
 
     #[Css('base.css', preprocess: TRUE)]

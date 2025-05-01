@@ -30,16 +30,6 @@ trait MixtapeListTrait
         return sprintf('@%s/%s', Twig::Namespace, $this->dsDirectory());
     }
 
-    public function absoluteCssDirectory(): string
-    {
-        return $this->mixtapeAssetDir();
-    }
-
-    final public function absoluteJsDirectory(): string
-    {
-        return $this->mixtapeAssetDir();
-    }
-
     private function mixtapeAssetDir(): string
     {
         $pathFromDrupalRoot = realpath(sprintf('%s/../ids/interchangeable-ds/assets', \DRUPAL_ROOT));

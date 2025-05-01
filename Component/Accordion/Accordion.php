@@ -13,7 +13,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-accordion
  */
 #[Asset\Css('accordion.css', preprocess: true)]
-#[Asset\Js('accordion.entry.js', preprocess: true)]
+#[Asset\Js('accordion.entry.js', preprocess: true, attributes: ['type' => 'module'])]
 class Accordion extends CommonComponent\Accordion\Accordion implements Utility\MixtapeObjectInterface
 {
     use Utility\ObjectTrait;

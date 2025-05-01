@@ -4,15 +4,14 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
-use Drupal\pinto\List\StreamWrapperAssetInterface;
 use Pinto\Attribute\Definition;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
 use PreviousNext\Ds\Mixtape\Layout;
 
 #[CanonicalProduct]
-enum MixtapeLayouts implements ObjectListInterface, StreamWrapperAssetInterface
-{
+enum MixtapeLayouts implements ObjectListInterface {
+
     use MixtapeListTrait;
 
     #[Definition(Layout\Grid\Grid::class)]
