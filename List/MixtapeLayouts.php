@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types=1);
+
+namespace PreviousNext\Ds\Mixtape\List;
+
+use Drupal\pinto\List\StreamWrapperAssetInterface;
+use Pinto\Attribute\Definition;
+use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
+use Pinto\List\ObjectListInterface;
+use PreviousNext\Ds\Mixtape\Layout;
+
+#[CanonicalProduct]
+enum MixtapeLayouts implements ObjectListInterface, StreamWrapperAssetInterface
+{
+    use MixtapeListTrait;
+
+    #[Definition(Layout\Grid\Grid::class)]
+    case Grid;
+
+    #[Definition(Layout\Grid\GridItem\GridItem::class)]
+    case GridItem;
+
+    #[Definition(Layout\Section\Section::class)]
+    case Section;
+}

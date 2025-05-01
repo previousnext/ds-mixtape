@@ -1,0 +1,45 @@
+{
+    "name": "previousnext/ds-mixtape",
+    "type": "library",
+    "require": {
+        "php": ">=8.2",
+        "ramsey/collection": "^2.1.1",
+        "thecodingmachine/safe": "^2.5 || ^3.1",
+        "dpi/pinto": "^0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "phpstan/extension-installer": "^1.4.3",
+        "phpstan/phpstan": "^1.12.23",
+        "phpstan/phpstan-strict-rules": "^1.6.2",
+        "phpstan/phpstan-deprecation-rules": "^1.2.1",
+        "previousnext/ds-common": "dev-common-lib"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:previousnext/interchangeable-ds.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "authors": [
+        {
+            "name": "dpi",
+            "email": "pro@danielph.in"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PreviousNext\\Ds\\Mixtape\\": "."
+        }
+    },
+    "license": "proprietary"
+}
