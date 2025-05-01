@@ -3,6 +3,7 @@
     "type": "library",
     "require": {
         "php": ">=8.2",
+        "previousnext/ds-common": "dev-main",
         "ramsey/collection": "^2.1.1",
         "thecodingmachine/safe": "^2.5 || ^3.1",
         "dpi/pinto": "^0"
@@ -12,8 +13,7 @@
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^1.12.23",
         "phpstan/phpstan-strict-rules": "^1.6.2",
-        "phpstan/phpstan-deprecation-rules": "^1.2.1",
-        "previousnext/ds-common": "dev-common-lib"
+        "phpstan/phpstan-deprecation-rules": "^1.2.1"
     },
     "repositories": [
         {
