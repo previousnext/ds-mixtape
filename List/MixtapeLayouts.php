@@ -12,14 +12,14 @@ use PreviousNext\Ds\Mixtape\Layout;
 #[CanonicalProduct]
 enum MixtapeLayouts implements ObjectListInterface {
 
-    use MixtapeListTrait;
+  use MixtapeListTrait;
 
-    #[Definition(Layout\Grid\Grid::class)]
-    case Grid;
+  #[Definition(Layout\Grid\Grid::class)]
+  case Grid;
 
-    #[Definition(Layout\Grid\GridItem\GridItem::class)]
-    case GridItem;
+  #[Definition(Layout\Grid\GridItem\GridItem::class)]
+  case GridItem;
 
-    #[Definition(Layout\Section\Section::class)]
-    case Section;
+  #[Definition(Layout\Section\Section::class)]
+  case Section;
 }

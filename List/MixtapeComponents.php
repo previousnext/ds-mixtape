@@ -13,27 +13,27 @@ use PreviousNext\Ds\Mixtape\Component;
 #[CanonicalProduct]
 enum MixtapeComponents implements ObjectListInterface {
 
-    use MixtapeListTrait;
+  use MixtapeListTrait;
 
-    #[Definition(Component\Accordion\Accordion::class)]
-    case Accordion;
+  #[Definition(Component\Accordion\Accordion::class)]
+  case Accordion;
 
-    #[Definition(Component\AccordionItem\AccordionItem::class)]
-    case AccordionItem;
+  #[Definition(Component\AccordionItem\AccordionItem::class)]
+  case AccordionItem;
 
-    #[Definition(Component\Callout\Callout::class)]
-    case Callout;
+  #[Definition(Component\Callout\Callout::class)]
+  case Callout;
 
-    #[Definition(Component\Card\Card::class)]
-    #[DependencyOn(MixtapeGlobal::Global)]
-    case Card;
+  #[Definition(Component\Card\Card::class)]
+  #[DependencyOn(MixtapeGlobal::Global)]
+  case Card;
 
-    #[Definition(Component\HeroBanner\HeroBanner::class)]
-    case HeroBanner;
+  #[Definition(Component\HeroBanner\HeroBanner::class)]
+  case HeroBanner;
 
-    #[Definition(Component\InPageAlert\InPageAlert::class)]
-    case InPageAlert;
+  #[Definition(Component\InPageAlert\InPageAlert::class)]
+  case InPageAlert;
 
-    #[Definition(Component\LinkList\LinkList::class)]
-    case LinkList;
+  #[Definition(Component\LinkList\LinkList::class)]
+  case LinkList;
 }

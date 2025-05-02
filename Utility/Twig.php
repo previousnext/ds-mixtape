@@ -7,7 +7,8 @@ namespace PreviousNext\Ds\Mixtape\Utility;
 /**
  * @internal
  */
-final class Twig
-{
-    public const Namespace = 'mixtape';
+final class Twig {
+
+  public const NAMESPACE = 'mixtape';
+
 }

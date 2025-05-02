@@ -6,6 +6,5 @@ namespace PreviousNext\Ds\Mixtape\Utility;
 
 use PreviousNext\Ds\Common\Utility\CommonObjectInterface;
 
-interface MixtapeObjectInterface extends CommonObjectInterface
-{
+interface MixtapeObjectInterface extends CommonObjectInterface {
 }
