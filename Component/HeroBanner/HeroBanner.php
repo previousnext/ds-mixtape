@@ -6,7 +6,6 @@ namespace PreviousNext\Ds\Mixtape\Component\HeroBanner;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
-use PreviousNext\Ds\Common\Atom;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 
@@ -20,14 +19,14 @@ class HeroBanner extends CommonComponent\HeroBanner\HeroBanner implements Utilit
 
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
-          // Mixtape `modifiers` may only contain values from
-          // HeroBannerBackground::modifierName().
+      // Mixtape `modifiers` may only contain values from
+      // HeroBannerBackground::modifierName().
       ->set('modifiers', $this->modifiers->getInstancesOf(HeroBannerBackground::class)->map(
-            static fn (HeroBannerBackground $modifier): string => $modifier->modifierName(),
-          ))
+        static fn (HeroBannerBackground $modifier): string => $modifier->modifierName(),
+      ))
       ->set('title', $this->title)
       ->set('subtitle', $this->subtitle)
-      ->set('link', $this->link instanceof Atom\Link\LinkWithLabel ? $this->link->markup() : $this->link?->url)
+      ->set('link', $this->link)
       ->set('image', $this->image)
       ->set('links', $this->links);
   }

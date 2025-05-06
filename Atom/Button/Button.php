@@ -14,7 +14,6 @@ use PreviousNext\Ds\Mixtape\Utility;
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-buttons
  */
 #[Css('button.css', preprocess: TRUE)]
-#[Slots\Attribute\RenameSlot(original: 'link', new: 'href')]
 class Button extends CommonComponent\Button\Button implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 
@@ -27,7 +26,7 @@ class Button extends CommonComponent\Button\Button implements Utility\MixtapeObj
 
     return parent::build($build)
       ->set('title', $this->title)
-      ->set('link', $this->link?->url->toString())
+      ->set('href', $this->href)
       ->set('as', $as);
   }
 

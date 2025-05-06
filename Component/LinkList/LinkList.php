@@ -20,10 +20,7 @@ class LinkList extends CommonComponent\LinkList\LinkList implements Utility\Mixt
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
       ->set('items', \array_map(static function (Atom\Link\Link $link) {
-              return [
-                'title' => $link instanceof Atom\Link\LinkWithLabel ? $link->label : $link->url,
-                'href' => $link->url,
-              ];
+        return $link();
       }, $this->toArray()));
   }
 

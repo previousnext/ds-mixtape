@@ -6,7 +6,6 @@ namespace PreviousNext\Ds\Mixtape\Layout\Section;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
-use PreviousNext\Ds\Common\Atom;
 use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Mixtape\Utility;
 
@@ -28,7 +27,7 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
       ->set('background', NULL)
       ->set('isContainer', $this->isContainer)
       ->set('content', $this->content?->markup)
-      ->set('link', $this->link instanceof Atom\Link\LinkWithLabel ? $this->link->markup() : $this->link?->url)
+      ->set('link', $this->link)
       ->set('heading', $this->heading?->heading)
       ->set('modifiers', [])
       ->set('as', $this->as->element());

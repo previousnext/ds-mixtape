@@ -6,7 +6,6 @@ namespace PreviousNext\Ds\Mixtape\Component\Card;
 
 use Pinto\Attribute\Asset;
 use Pinto\Slots;
-use PreviousNext\Ds\Common\Atom\Link\LinkWithLabel;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 
@@ -25,10 +24,10 @@ class Card extends CommonComponent\Card\Card implements Utility\MixtapeObjectInt
       ->set('modifiers', $this->modifiers)
       ->set('heading', $this->heading?->heading)
       ->set('content', $this->content?->markup)
-      ->set('link', $this->link instanceof LinkWithLabel ? $this->link->markup() : $this->link?->url)
-          // Mixtape expects a string for tags.
+      ->set('link', $this->link)
+      // Mixtape expects a string for tags.
       ->set('tags', \implode(' ', \array_map(static function ($tag) {
-              return $tag->title;
+        return $tag->title;
       }, $this->tags->toArray())))
       ->set('date', $this->date?->format('j F Y'))
       ->set('icon', '🐴');
