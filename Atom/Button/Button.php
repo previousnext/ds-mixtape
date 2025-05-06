@@ -6,15 +6,16 @@ namespace PreviousNext\Ds\Mixtape\Atom\Button;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
-use PreviousNext\Ds\Common\Component as CommonComponent;
-use PreviousNext\Ds\Common\Component\Button\ButtonType;
+use PreviousNext\Ds\Common\Atom as CommonAtom;
+use PreviousNext\Ds\Common\Atom\Button\ButtonType;
 use PreviousNext\Ds\Mixtape\Utility;
 
 /**
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-buttons
  */
 #[Css('button.css', preprocess: TRUE)]
-class Button extends CommonComponent\Button\Button implements Utility\MixtapeObjectInterface {
+class Button extends CommonAtom\Button\Button implements Utility\MixtapeObjectInterface {
+
   use Utility\ObjectTrait;
 
   protected function build(Slots\Build $build): Slots\Build {
