@@ -11,6 +11,7 @@ use Pinto\List\ObjectListInterface;
 use PreviousNext\Ds\Mixtape\Component;
 
 #[CanonicalProduct]
+#[DependencyOn(MixtapeGlobal::Global)]
 enum MixtapeComponents implements ObjectListInterface {
 
   use MixtapeListTrait;

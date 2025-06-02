@@ -1,9 +1,10 @@
 {
     "name": "previousnext/ds-mixtape",
     "type": "library",
+    "version": "0.0.1",
     "require": {
         "php": ">=8.2",
-        "previousnext/ds-common": "dev-main",
+        "previousnext/ds-common": "*",
         "ramsey/collection": "^2.1.1",
         "thecodingmachine/safe": "^2.5 || ^3.1",
         "dpi/pinto": "^0"
