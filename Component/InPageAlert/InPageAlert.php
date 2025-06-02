@@ -8,6 +8,7 @@ use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-messages
@@ -17,6 +18,7 @@ use PreviousNext\Ds\Mixtape\Utility;
   // Unique to Mixtape:
   'closable',
 ])]
+#[Scenarios([CommonComponent\InPageAlert\InPageAlertScenarios::class])]
 class InPageAlert extends CommonComponent\InPageAlert\InPageAlert implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 

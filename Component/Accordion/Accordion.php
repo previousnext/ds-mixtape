@@ -8,12 +8,14 @@ use Pinto\Attribute\Asset;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-accordion
  */
 #[Asset\Css('accordion.css', preprocess: TRUE)]
 #[Asset\Js('accordion.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
+#[Scenarios([CommonComponent\Accordion\AccordionScenarios::class])]
 class Accordion extends CommonComponent\Accordion\Accordion implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;

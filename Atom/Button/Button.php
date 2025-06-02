@@ -9,11 +9,13 @@ use Pinto\Slots;
 use PreviousNext\Ds\Common\Atom as CommonAtom;
 use PreviousNext\Ds\Common\Atom\Button\ButtonType;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-buttons
  */
 #[Css('button.css', preprocess: TRUE)]
+#[Scenarios([CommonAtom\Button\ButtonScenarios::class])]
 class Button extends CommonAtom\Button\Button implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;

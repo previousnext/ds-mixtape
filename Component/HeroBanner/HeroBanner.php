@@ -8,12 +8,14 @@ use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-grouped-components.html#kssref-grouped-components-page-title-hero
  */
 #[Css('hero-banner.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'links', new: 'linkList')]
+#[Scenarios([CommonComponent\HeroBanner\HeroBannerScenarios::class])]
 class HeroBanner extends CommonComponent\HeroBanner\HeroBanner implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 

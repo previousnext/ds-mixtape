@@ -9,11 +9,13 @@ use Pinto\Slots;
 use PreviousNext\Ds\Common\Atom;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-link-list
  */
 #[Asset\Css('link-list.css', preprocess: TRUE)]
+#[Scenarios([CommonComponent\LinkList\LinkListScenarios::class])]
 class LinkList extends CommonComponent\LinkList\LinkList implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 

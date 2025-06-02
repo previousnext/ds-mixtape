@@ -8,12 +8,14 @@ use Pinto\Attribute\Asset;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-content-card
  */
 #[Asset\Css('card.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
+#[Scenarios([CommonComponent\Card\CardScenarios::class])]
 class Card extends CommonComponent\Card\Card implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 

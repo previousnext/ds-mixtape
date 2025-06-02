@@ -8,6 +8,7 @@ use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Mixtape\Utility;
+use PreviousNext\IdsTools\Scenario\Scenarios;
 
 /**
  * @see https://mixtape.pnx.io/section-layout.html#kssref-layout-section
@@ -16,6 +17,7 @@ use PreviousNext\Ds\Mixtape\Utility;
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
 #[Slots\Attribute\RenameSlot(original: 'isContainer', new: 'container')]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
+#[Scenarios([CommonLayouts\Section\SectionScenarios::class])]
 class Section extends CommonLayouts\Section\Section implements Utility\MixtapeObjectInterface {
   // @todo: mixtape has a `background` var.
   use Utility\ObjectTrait;
