@@ -7,7 +7,7 @@
         "previousnext/ds-common": "*",
         "ramsey/collection": "^2.1.1",
         "thecodingmachine/safe": "^2.5 || ^3.1",
-        "dpi/pinto": "^0"
+        "dpi/pinto": "^0.4.1"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.75",
