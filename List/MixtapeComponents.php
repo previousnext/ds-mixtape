@@ -9,6 +9,7 @@ use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
 use PreviousNext\Ds\Common\Utility\TemplateDirectory;
+use PreviousNext\Ds\Common\Utility\TemplateFile;
 use PreviousNext\Ds\Mixtape\Component;
 
 #[CanonicalProduct]
@@ -48,6 +49,14 @@ enum MixtapeComponents implements ObjectListInterface {
   #[Definition(Component\SearchForm\SearchForm::class)]
   #[TemplateDirectory('Form/Search')]
   case SearchForm;
+
+  #[Definition(Component\Steps\Steps::class)]
+  case Steps;
+
+  #[TemplateFile('step-item')]
+  #[TemplateDirectory('Component/Steps')]
+  #[Definition(Component\Steps\Step\Step::class)]
+  case Step;
 
   #[Definition(Component\Tabs\Tabs::class)]
   #[DependencyOn(MixtapeGlobal::DropMenu)]
