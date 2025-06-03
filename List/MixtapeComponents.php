@@ -8,6 +8,7 @@ use Pinto\Attribute\Definition;
 use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
+use PreviousNext\Ds\Common\Utility\TemplateDirectory;
 use PreviousNext\Ds\Mixtape\Component;
 
 #[CanonicalProduct]
@@ -21,6 +22,9 @@ enum MixtapeComponents implements ObjectListInterface {
 
   #[Definition(Component\AccordionItem\AccordionItem::class)]
   case AccordionItem;
+
+  #[Definition(Component\Breadcrumb\Breadcrumb::class)]
+  case Breadcrumb;
 
   #[Definition(Component\Callout\Callout::class)]
   case Callout;
@@ -37,4 +41,19 @@ enum MixtapeComponents implements ObjectListInterface {
 
   #[Definition(Component\LinkList\LinkList::class)]
   case LinkList;
+
+  #[Definition(Component\Navigation\Navigation::class)]
+  case Navigation;
+
+  #[Definition(Component\SearchForm\SearchForm::class)]
+  #[TemplateDirectory('Form/Search')]
+  case SearchForm;
+
+  #[Definition(Component\Tabs\Tabs::class)]
+  #[DependencyOn(MixtapeGlobal::DropMenu)]
+  case Tabs;
+
+  #[Definition(Component\Tabs\TabsItem\TabsItem::class)]
+  case TabItem;
+
 }
