@@ -8,25 +8,16 @@ use Pinto\Slots;
 use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Mixtape\Utility;
 
-#[Slots\Attribute\ModifySlots(add: [
-  // Unique to Mixtape's logo.twig:
-  'alt',
-  'src',
-  'width',
-  'height',
-])]
+#[Slots\Attribute\RenameSlot(original: 'link', new: 'href')]
+#[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 class LinkedImage extends CommonAtoms\LinkedImage\LinkedImage implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
 
   protected function build(Slots\Build $build): Slots\Build {
     return $build
-      ->set('href', $this->href->href)
-      ->set('image', NULL)
-      ->set('alt', $this->image->altText)
-      ->set('src', $this->image->source)
-      ->set('width', $this->image->width)
-      ->set('height', $this->image->height);
+      ->set('link', $this->link->href)
+      ->set('image', $this->image);
   }
 
 }
