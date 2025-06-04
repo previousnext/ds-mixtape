@@ -40,6 +40,9 @@ enum MixtapeComponents implements ObjectListInterface {
   #[Definition(Component\InPageAlert\InPageAlert::class)]
   case InPageAlert;
 
+  #[Definition(Component\InPageNavigation\InPageNavigation::class)]
+  case InPageNavigation;
+
   #[Definition(Component\LinkList\LinkList::class)]
   case LinkList;
 
