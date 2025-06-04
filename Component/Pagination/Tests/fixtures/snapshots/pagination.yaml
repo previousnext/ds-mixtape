@@ -1,0 +1,203 @@
+'#theme': b6a98ae948-MixtapeComponents-Pagination
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Pagination
+'#previous':
+    '#theme': c2e75f8655-CommonAtoms-Link
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Link
+    '#title': Previous
+    '#href': 'http://example.com/'
+    '#more': false
+    '#external': false
+    '#current': false
+    '#download': false
+    '#iconStart':
+        '#theme': 3b90f10624-MixtapeAtoms-Icon
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Icon
+        '#icon': arrow-left
+        '#text': ~
+        '#alignmentType': ~
+        '#attributes': {  }
+        '#modifiers': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#iconEnd': ~
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#next':
+    '#theme': c2e75f8655-CommonAtoms-Link
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Link
+    '#title': Next
+    '#href': 'http://example.com/'
+    '#more': false
+    '#external': false
+    '#current': false
+    '#download': false
+    '#iconStart': ~
+    '#iconEnd':
+        '#theme': 3b90f10624-MixtapeAtoms-Icon
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Icon
+        '#icon': arrow-right
+        '#text': ~
+        '#alignmentType': ~
+        '#attributes': {  }
+        '#modifiers': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#pages':
+    -
+        '#theme': b6a98ae948-MixtapeComponents-PaginationItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-PaginationItem
+        '#link':
+            '#theme': c2e75f8655-CommonAtoms-Link
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Link
+            '#title': '1'
+            '#href': 'http://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#ellipsis': false
+        '#isEnabled': false
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-PaginationItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-PaginationItem
+        '#link':
+            '#theme': c2e75f8655-CommonAtoms-Link
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Link
+            '#title': '2'
+            '#href': 'http://example.com/'
+            '#more': false
+            '#external': false
+            '#current': true
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#ellipsis': false
+        '#isEnabled': true
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-PaginationItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-PaginationItem
+        '#link': ~
+        '#ellipsis': true
+        '#isEnabled': false
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-PaginationItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-PaginationItem
+        '#link':
+            '#theme': c2e75f8655-CommonAtoms-Link
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Link
+            '#title': '99'
+            '#href': 'http://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#ellipsis': false
+        '#isEnabled': false
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-PaginationItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-PaginationItem
+        '#link':
+            '#theme': c2e75f8655-CommonAtoms-Link
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Link
+            '#title': '100'
+            '#href': 'http://example.com/'
+            '#more': false
+            '#external': false
+            '#current': false
+            '#download': false
+            '#iconStart': ~
+            '#iconEnd': ~
+            '#attributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#ellipsis': false
+        '#isEnabled': false
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#attributes':
+    hello: {  }
+    class:
+        - foo
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1
