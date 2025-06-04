@@ -1,0 +1,55 @@
+'#theme': b6a98ae948-MixtapeComponents-ListItem
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-ListItem
+'#link':
+    '#theme': c2e75f8655-CommonAtoms-Link
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Link
+    '#title': 'Link 1'
+    '#href': 'http://example.com/'
+    '#more': false
+    '#external': false
+    '#current': false
+    '#download': false
+    '#iconStart': ~
+    '#iconEnd': ~
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#image':
+    '#theme': 3b90f10624-MixtapeAtoms-Image
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Image
+    '#src': 'https://picsum.photos/seed/2025-06-04/120/49'
+    '#alt': 'Picsum Sample'
+    '#width': 120
+    '#height': 49
+    '#loading': eager
+    '#sources': {  }
+    '#imageAttributes': {  }
+    '#containerAttributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#tags': 'Tag 1 Tag 2 Tag 3'
+'#content': {  }
+'#label': 'A label 🦊'
+'#info': 'Welcome to the Jungle 🎸'
+'#infoPosition':
+    name: After
+'#modifiers': {  }
+'#attributes':
+    foo: {  }
+    class:
+        - hello
+'#infoBefore': false
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

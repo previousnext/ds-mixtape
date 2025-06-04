@@ -1,0 +1,36 @@
+'#theme': b6a98ae948-MixtapeComponents-ListItem
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-ListItem
+'#link':
+    '#theme': c2e75f8655-CommonAtoms-Link
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Link
+    '#title': 'Link 1'
+    '#href': 'http://example.com/'
+    '#more': false
+    '#external': false
+    '#current': false
+    '#download': false
+    '#iconStart': ~
+    '#iconEnd': ~
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#image': ~
+'#tags': ''
+'#content': {  }
+'#label': ~
+'#info': 'https://example.com/some-thing'
+'#infoPosition':
+    name: After
+'#modifiers': {  }
+'#attributes': {  }
+'#infoBefore': false
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

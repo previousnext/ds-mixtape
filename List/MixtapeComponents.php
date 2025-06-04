@@ -46,6 +46,11 @@ enum MixtapeComponents implements ObjectListInterface {
   #[Definition(Component\LinkList\LinkList::class)]
   case LinkList;
 
+  #[Definition(Component\ListItem\ListItem::class)]
+  #[TemplateDirectory('Component/ListItem')]
+  #[DependencyOn(MixtapeLayouts::Section)]
+  case ListItem;
+
   #[Definition(Component\Navigation\Navigation::class)]
   case Navigation;
 
