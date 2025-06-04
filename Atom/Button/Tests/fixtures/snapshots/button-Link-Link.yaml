@@ -1,0 +1,16 @@
+'#theme': 3b90f10624-MixtapeAtoms-Button
+'#attached':
+    library:
+        - pinto/3b90f10624-MixtapeAtoms-Button
+'#title': 'Link button'
+'#href': 'http://example.com/'
+'#as': link
+'#modifier': ~
+'#disabled': false
+'#iconOnly': false
+'#iconStart': ~
+'#iconEnd': ~
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

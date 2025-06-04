@@ -1,0 +1,13 @@
+'#theme': b6a98ae948-MixtapeComponents-InPageAlert
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-InPageAlert
+'#heading': Heading!
+'#type': success
+'#content': {  }
+'#link': ''
+'#closable': true
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

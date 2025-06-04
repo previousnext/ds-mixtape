@@ -1,0 +1,17 @@
+'#theme': b6a98ae948-MixtapeComponents-InPageNavigation
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-InPageNavigation
+'#heading': Example!
+'#levels':
+    - h1
+    - h2
+    - h3
+'#attributes':
+    hello: {  }
+    class:
+        - foo
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

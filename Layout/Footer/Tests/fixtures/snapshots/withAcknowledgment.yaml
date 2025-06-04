@@ -1,0 +1,96 @@
+'#theme': d1e0ff8fb4-MixtapeLayouts-Footer
+'#attached':
+    library:
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Footer
+'#logo':
+    '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-LinkedImage
+    '#image':
+        '#theme': 3b90f10624-MixtapeAtoms-Image
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Image
+        '#src': 'https://picsum.photos/seed/2025-06-04/120/49'
+        '#alt': 'Picsum Sample'
+        '#width': 120
+        '#height': 49
+        '#loading': eager
+        '#sources': {  }
+        '#imageAttributes': {  }
+        '#containerAttributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#href': 'http://example.com/'
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#navigation':
+    '#theme': b6a98ae948-MixtapeComponents-Navigation
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-Navigation
+    '#id': id
+    '#title': Navigation
+    '#items':
+        - {  }
+        - {  }
+        - {  }
+        - {  }
+    '#type': footer
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#links':
+    -
+        '#theme': c2e75f8655-CommonAtoms-Link
+        '#attached':
+            library:
+                - pinto/c2e75f8655-CommonAtoms-Link
+        '#title': 'Terms & Conditions'
+        '#href': 'http://example.com/'
+        '#more': false
+        '#external': false
+        '#current': false
+        '#download': false
+        '#iconStart': ~
+        '#iconEnd': ~
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': c2e75f8655-CommonAtoms-Link
+        '#attached':
+            library:
+                - pinto/c2e75f8655-CommonAtoms-Link
+        '#title': Accessibility
+        '#href': 'http://example.com/'
+        '#more': false
+        '#external': false
+        '#current': false
+        '#download': false
+        '#iconStart': ~
+        '#iconEnd': ~
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#socials': ~
+'#modifiers': {  }
+'#attributes': {  }
+'#aoc': 'We acknowledge the traditional owners and custodians of country throughout Australia and acknowledges their continuing connection to land, waters and community. We pay our respects to the people, the cultures and the elders past, present and emerging.'
+'#copyright': '© 2025 Company Name'
+'#background': dark
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

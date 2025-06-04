@@ -1,0 +1,32 @@
+'#theme': b6a98ae948-MixtapeComponents-HeroBanner
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-HeroBanner
+'#title': Title!
+'#subtitle': Subtitle!
+'#link': ~
+'#image':
+    '#theme': 3b90f10624-MixtapeAtoms-Image
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Image
+    '#src': 'https://picsum.photos/seed/2025-06-04/600/200'
+    '#alt': 'Picsum Sample'
+    '#width': 600
+    '#height': 200
+    '#loading': eager
+    '#sources': {  }
+    '#imageAttributes': {  }
+    '#containerAttributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#linkList': ~
+'#highlight': true
+'#modifiers': {  }
+'#containerAttributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

@@ -1,0 +1,18 @@
+'#theme': 3b90f10624-MixtapeAtoms-Icon
+'#attached':
+    library:
+        - pinto/3b90f10624-MixtapeAtoms-Icon
+'#icon': drupal
+'#text': ~
+'#alignmentType': ~
+'#attributes':
+    class:
+        - mx-icon--size-lg
+'#modifiers':
+    - drupal
+    -
+        name: Large
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

@@ -1,0 +1,44 @@
+'#theme': d1e0ff8fb4-MixtapeLayouts-Grid
+'#attached':
+    library:
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Grid
+'#items':
+    -
+        '#theme': d1e0ff8fb4-MixtapeLayouts-GridItem
+        '#attached':
+            library:
+                - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
+        '#item': {  }
+        '#isContainer': true
+        '#modifiers': {  }
+        '#as': li
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': d1e0ff8fb4-MixtapeLayouts-GridItem
+        '#attached':
+            library:
+                - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
+        '#item': {  }
+        '#isContainer': true
+        '#modifiers': {  }
+        '#as': div
+        '#attributes':
+            foo: {  }
+            class:
+                - 'gi hello'
+                - 'gi world'
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#modifiers': {  }
+'#as': ul
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

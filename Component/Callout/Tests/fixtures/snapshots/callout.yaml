@@ -1,0 +1,15 @@
+'#theme': b6a98ae948-MixtapeComponents-Callout
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Callout
+'#title': Heading!
+'#content': {  }
+'#attributes':
+    foo: {  }
+    class:
+        - hello
+        - world
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

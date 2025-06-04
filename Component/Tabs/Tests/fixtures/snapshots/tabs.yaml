@@ -1,0 +1,70 @@
+'#theme': b6a98ae948-MixtapeComponents-Tabs
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Tabs
+'#id': the-id
+'#title': Tabs!
+'#listItems': {  }
+'#items':
+    -
+        '#theme': b6a98ae948-MixtapeComponents-TabItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-TabItem
+        '#title': 'Tab 1'
+        '#content': 'Tab 1 contents!'
+        '#id': id
+        '#active': false
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-TabItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-TabItem
+        '#title': 'Tab 2'
+        '#content': 'Tab 2 contents!'
+        '#id': id--2
+        '#active': true
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-TabItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-TabItem
+        '#title': 'Tab 3'
+        '#content': 'Tab 3 contents!'
+        '#id': id--3
+        '#active': false
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-TabItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-TabItem
+        '#title': 'Tab 4'
+        '#content': 'Tab 4 contents!'
+        '#id': id--4
+        '#active': false
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#containerAttributes':
+    foo: {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

@@ -1,0 +1,186 @@
+'#theme': d1e0ff8fb4-MixtapeLayouts-Header
+'#attached':
+    library:
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Header
+'#logo':
+    '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-LinkedImage
+    '#image':
+        '#theme': 3b90f10624-MixtapeAtoms-Image
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Image
+        '#src': 'https://picsum.photos/seed/2025-06-04/120/49'
+        '#alt': 'Picsum Sample'
+        '#width': 120
+        '#height': 49
+        '#loading': eager
+        '#sources': {  }
+        '#imageAttributes': {  }
+        '#containerAttributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#href': 'http://example.com/'
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#title': 'Site name!'
+'#description': 'Site slogan!'
+'#search':
+    '#theme': b6a98ae948-MixtapeComponents-SearchForm
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-SearchForm
+    '#attributes': {  }
+    '#action': /search-for-common
+    '#input':
+        charset: utf8
+    '#button':
+        '#theme': 3b90f10624-MixtapeAtoms-Button
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Button
+        '#title': Search
+        '#href': ~
+        '#as': submit
+        '#modifier': ~
+        '#disabled': false
+        '#iconOnly': true
+        '#iconStart':
+            '#theme': 3b90f10624-MixtapeAtoms-Icon
+            '#attached':
+                library:
+                    - pinto/3b90f10624-MixtapeAtoms-Icon
+            '#icon': search
+            '#text': ~
+            '#alignmentType': ~
+            '#attributes':
+                class:
+                    - mx-icon--search
+            '#modifiers': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#iconEnd': ~
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#navigation': ~
+'#controls': {  }
+'#inner':
+    '#theme': d1e0ff8fb4-MixtapeLayouts-HeaderStandard
+    '#attached':
+        library:
+            - pinto/d1e0ff8fb4-MixtapeLayouts-HeaderStandard
+    '#logo':
+        '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-LinkedImage
+        '#image':
+            '#theme': 3b90f10624-MixtapeAtoms-Image
+            '#attached':
+                library:
+                    - pinto/3b90f10624-MixtapeAtoms-Image
+            '#src': 'https://picsum.photos/seed/2025-06-04/120/49'
+            '#alt': 'Picsum Sample'
+            '#width': 120
+            '#height': 49
+            '#loading': eager
+            '#sources': {  }
+            '#imageAttributes': {  }
+            '#containerAttributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#href': 'http://example.com/'
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#title': 'Site name!'
+    '#description': 'Site slogan!'
+    '#search':
+        '#theme': b6a98ae948-MixtapeComponents-SearchForm
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-SearchForm
+        '#attributes': {  }
+        '#action': /search-for-common
+        '#input':
+            charset: utf8
+        '#button':
+            '#theme': 3b90f10624-MixtapeAtoms-Button
+            '#attached':
+                library:
+                    - pinto/3b90f10624-MixtapeAtoms-Button
+            '#title': Search
+            '#href': ~
+            '#as': submit
+            '#modifier': ~
+            '#disabled': false
+            '#iconOnly': true
+            '#iconStart':
+                '#theme': 3b90f10624-MixtapeAtoms-Icon
+                '#attached':
+                    library:
+                        - pinto/3b90f10624-MixtapeAtoms-Icon
+                '#icon': search
+                '#text': ~
+                '#alignmentType': ~
+                '#attributes':
+                    class:
+                        - mx-icon--search
+                '#modifiers': {  }
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#iconEnd': ~
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#navigation':
+        '#theme': b6a98ae948-MixtapeComponents-Navigation
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-Navigation
+        '#id': id
+        '#title': Navigation
+        '#items':
+            - {  }
+            - {  }
+            - {  }
+        '#type': dropdown
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    '#controls': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

@@ -1,0 +1,55 @@
+'#theme': b6a98ae948-MixtapeComponents-Accordion
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Accordion
+'#items':
+    -
+        '#theme': b6a98ae948-MixtapeComponents-AccordionItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-AccordionItem
+        '#title': Foo
+        '#content': 'Foo Content'
+        '#open': true
+        '#id': ~
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-AccordionItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-AccordionItem
+        '#title': Bar
+        '#content': 'Bar Content'
+        '#open': true
+        '#id': ~
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': b6a98ae948-MixtapeComponents-AccordionItem
+        '#attached':
+            library:
+                - pinto/b6a98ae948-MixtapeComponents-AccordionItem
+        '#title': Baz
+        '#content': 'Baz Content'
+        '#open': true
+        '#id': ~
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#title': Title!
+'#toggleAll': ~
+'#modifier': ~
+'#containerAttributes':
+    hello: {  }
+    class:
+        - foo
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

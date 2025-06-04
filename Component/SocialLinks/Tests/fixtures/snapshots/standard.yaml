@@ -1,0 +1,56 @@
+'#theme': b6a98ae948-MixtapeComponents-SocialLinks
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-SocialLinks
+'#heading': Title!
+'#items':
+    -
+        '#theme': c2e75f8655-CommonAtoms-Link
+        '#attached':
+            library:
+                - pinto/c2e75f8655-CommonAtoms-Link
+        '#title': 'Text Link'
+        '#href': 'http://example.com/'
+        '#more': false
+        '#external': false
+        '#current': false
+        '#download': false
+        '#iconStart': ~
+        '#iconEnd': ~
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+    -
+        '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-LinkedImage
+        '#image':
+            '#theme': 3b90f10624-MixtapeAtoms-Image
+            '#attached':
+                library:
+                    - pinto/3b90f10624-MixtapeAtoms-Image
+            '#src': 'https://picsum.photos/seed/2025-06-04/24/24'
+            '#alt': 'Picsum Sample'
+            '#width': 24
+            '#height': 24
+            '#loading': eager
+            '#sources': {  }
+            '#imageAttributes': {  }
+            '#containerAttributes': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#href': 'http://example.com/'
+        '#attributes': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1
