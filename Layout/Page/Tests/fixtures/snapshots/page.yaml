@@ -53,10 +53,10 @@
         tags: {  }
         max-age: -1
 '#header':
-    '#theme': d1e0ff8fb4-MixtapeLayouts-HeaderStacked
+    '#theme': d1e0ff8fb4-MixtapeLayouts-Header
     '#attached':
         library:
-            - pinto/d1e0ff8fb4-MixtapeLayouts-HeaderStacked
+            - pinto/d1e0ff8fb4-MixtapeLayouts-Header
     '#logo':
         '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
         '#attached':
@@ -181,6 +181,7 @@
                 contexts: {  }
                 tags: {  }
                 max-age: -1
+    '#stacked': true
     '#cache':
         contexts: {  }
         tags: {  }

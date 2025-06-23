@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\Component\Navigation;
 
+use PreviousNext\Ds\Common\Modifier\Mutex;
+
+#[Mutex]
 enum NavigationType {
-  // @todo Does an interface need to be extracted for all Navigation DS's?
-  // @todo #[Mutex]
+
   case Collapsible;
   case Dropdown;
   case Mega;

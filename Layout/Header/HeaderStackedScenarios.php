@@ -2,18 +2,19 @@
 
 declare(strict_types=1);
 
-namespace PreviousNext\Ds\Mixtape\Layout\Header\HeaderStacked;
+namespace PreviousNext\Ds\Mixtape\Layout\Header;
 
 use Drupal\Core\Url;
 use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Common\Component as CommonComponents;
+use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Common\Vo\MenuTree\MenuTree;
 use PreviousNext\IdsTools\Scenario\Scenario;
 
 final class HeaderStackedScenarios {
 
   #[Scenario(viewPortHeight: 600, viewPortWidth: 1200)]
-  final public static function stacked(): HeaderStacked {
+  final public static function stacked(): Header {
     $url = \Mockery::mock(Url::class);
     $url->expects('toString')->andReturn('http://example.com/');
 
@@ -35,7 +36,8 @@ final class HeaderStackedScenarios {
 
     $icon = CommonAtoms\Icon\Icon::create('chevron-down');
 
-    return HeaderStacked::create(
+    /** @var Header $header */
+    $header = CommonLayouts\Header\Header::create(
       logo: CommonAtoms\LinkedImage\LinkedImage::create(
         CommonComponents\Media\Image\Image::createSample(120, 49),
         CommonAtoms\Link\Link::create('LinkedImageText!', $url),
@@ -52,6 +54,9 @@ final class HeaderStackedScenarios {
         ),
       ],
     );
+    $header->modifiers[] = HeaderLayout::Stacked;
+
+    return $header;
   }
 
 }

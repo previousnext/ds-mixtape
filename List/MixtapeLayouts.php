@@ -9,8 +9,6 @@ use Pinto\Attribute\Definition;
 use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
-use PreviousNext\Ds\Common\Utility\TemplateDirectory;
-use PreviousNext\Ds\Common\Utility\TemplateFile;
 use PreviousNext\Ds\Mixtape\Layout;
 
 #[CanonicalProduct]
@@ -30,18 +28,8 @@ enum MixtapeLayouts implements ObjectListInterface {
   case GridItem;
 
   #[Definition(Layout\Header\Header::class)]
+  #[DependencyOn(self::Section)]
   case Header;
-
-  #[Definition(Layout\Header\HeaderStandard\HeaderStandard::class)]
-  #[TemplateFile('header')]
-  #[TemplateDirectory('Layout/Header')]
-  #[DependencyOn(self::Section)]
-  case HeaderStandard;
-
-  #[Definition(Layout\Header\HeaderStacked\HeaderStacked::class)]
-  #[TemplateDirectory('Layout/Header')]
-  #[DependencyOn(self::Section)]
-  case HeaderStacked;
 
   #[Definition(Layout\Section\Section::class)]
   case Section;

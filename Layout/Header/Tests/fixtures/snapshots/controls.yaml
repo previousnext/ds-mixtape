@@ -1,7 +1,7 @@
-'#theme': d1e0ff8fb4-MixtapeLayouts-HeaderStacked
+'#theme': d1e0ff8fb4-MixtapeLayouts-Header
 '#attached':
     library:
-        - pinto/d1e0ff8fb4-MixtapeLayouts-HeaderStacked
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Header
 '#logo':
     '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
     '#attached':
@@ -30,53 +30,9 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#title': 'Site name!'
-'#description': 'Site slogan!'
-'#search':
-    '#theme': b6a98ae948-MixtapeComponents-SearchForm
-    '#attached':
-        library:
-            - pinto/b6a98ae948-MixtapeComponents-SearchForm
-    '#attributes': {  }
-    '#action': /search-for-common
-    '#input':
-        charset: utf8
-    '#button':
-        '#theme': 3b90f10624-MixtapeAtoms-Button
-        '#attached':
-            library:
-                - pinto/3b90f10624-MixtapeAtoms-Button
-        '#title': Search
-        '#href': ~
-        '#as': submit
-        '#modifier': ~
-        '#disabled': false
-        '#iconOnly': true
-        '#iconStart':
-            '#theme': 3b90f10624-MixtapeAtoms-Icon
-            '#attached':
-                library:
-                    - pinto/3b90f10624-MixtapeAtoms-Icon
-            '#icon': search
-            '#text': ~
-            '#alignmentType': ~
-            '#attributes':
-                class:
-                    - mx-icon--search
-            '#modifiers': {  }
-            '#cache':
-                contexts: {  }
-                tags: {  }
-                max-age: -1
-        '#iconEnd': ~
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
-    '#cache':
-        contexts: {  }
-        tags: {  }
-        max-age: -1
+'#title': ~
+'#description': ~
+'#search': ~
 '#navigation':
     '#theme': b6a98ae948-MixtapeComponents-Navigation
     '#attached':
@@ -86,13 +42,7 @@
     '#title': Navigation
     '#items':
         - {  }
-        -
-            -
-                - {  }
-            - {  }
-            - {  }
-        -
-            - {  }
+        - {  }
         - {  }
     '#type': dropdown
     '#cache':
@@ -130,6 +80,7 @@
             contexts: {  }
             tags: {  }
             max-age: -1
+'#stacked': false
 '#cache':
     contexts: {  }
     tags: {  }

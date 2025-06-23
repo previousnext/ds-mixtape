@@ -20,7 +20,7 @@ use PreviousNext\Ds\Common\Vo\MenuTree\MenuTree;
 use PreviousNext\Ds\Common\Vo\MenuTree\MenuTrees;
 use PreviousNext\Ds\Mixtape\Atom\Icon\Icons;
 use PreviousNext\Ds\Mixtape\Atom\Icon\IconSize;
-use PreviousNext\Ds\Mixtape\Layout\Header\HeaderStacked\HeaderStacked;
+use PreviousNext\Ds\Mixtape\Layout\Header\HeaderLayout;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
@@ -85,31 +85,34 @@ class Page implements Utility\MixtapeObjectInterface {
     $menu[] = MenuTree::create(CommonAtoms\Link\Link::create('Resources', $url));
     $treeA[] = MenuTree::create(CommonAtoms\Link\Link::create('Link A1', $url));
 
+    $header = CommonLayouts\Header\Header::create(
+      logo: CommonAtoms\LinkedImage\LinkedImage::create(
+      // @todo Mixtape logo makes search look bizarre when logo is taller...
+        CommonComponents\Media\Image\Image::createSample(120, 49),
+        CommonAtoms\Link\Link::create('LinkedImageText!', $url),
+      ),
+      // title: \Drupal::configFactory()->get('system.site')->get('name'),
+      title: 'Site name',
+      description: '<em>Slogan</em>',
+      hasSearch: TRUE,
+      menu: $menu,
+      controls: [
+        CommonAtoms\Button\Button::create(
+          title: 'Translate',
+          as: CommonAtoms\Button\ButtonType::Button,
+          iconEnd: $icon,
+        ),
+      ],
+    );
+    $header->modifiers[] = HeaderLayout::Stacked;
+
     return $build
       ->set('main', $this->content)
       ->set('masthead', (CommonLayouts\Masthead\Masthead::create(
         content: Html::create(Markup::create('A PreviousNext Product')),
         links: [CommonAtoms\Link\Link::create('Link 1', $url)],
       ))())
-      ->set('header', HeaderStacked::create(
-        logo: CommonAtoms\LinkedImage\LinkedImage::create(
-          // @todo Mixtape logo makes search look bizarre when logo is taller...
-          CommonComponents\Media\Image\Image::createSample(120, 49),
-          CommonAtoms\Link\Link::create('LinkedImageText!', $url),
-        ),
-        // title: \Drupal::configFactory()->get('system.site')->get('name'),
-        title: 'Site name',
-        description: '<em>Slogan</em>',
-        hasSearch: TRUE,
-        menu: $menu,
-        controls: [
-          CommonAtoms\Button\Button::create(
-            title: 'Translate',
-            as: CommonAtoms\Button\ButtonType::Button,
-            iconEnd: $icon,
-          ),
-        ],
-      ))
+      ->set('header', $header)
       ->set('footer', $this->footer())
       ->set('attributes', $this->containerAttributes);
   }

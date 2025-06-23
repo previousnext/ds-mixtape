@@ -1,7 +1,7 @@
-'#theme': d1e0ff8fb4-MixtapeLayouts-HeaderStandard
+'#theme': d1e0ff8fb4-MixtapeLayouts-Header
 '#attached':
     library:
-        - pinto/d1e0ff8fb4-MixtapeLayouts-HeaderStandard
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Header
 '#logo':
     '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
     '#attached':
@@ -50,6 +50,7 @@
         tags: {  }
         max-age: -1
 '#controls': {  }
+'#stacked': false
 '#cache':
     contexts: {  }
     tags: {  }

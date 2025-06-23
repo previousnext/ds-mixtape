@@ -1,7 +1,7 @@
-'#theme': d1e0ff8fb4-MixtapeLayouts-HeaderStandard
+'#theme': d1e0ff8fb4-MixtapeLayouts-Header
 '#attached':
     library:
-        - pinto/d1e0ff8fb4-MixtapeLayouts-HeaderStandard
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Header
 '#logo':
     '#theme': 3b90f10624-MixtapeAtoms-LinkedImage
     '#attached':
@@ -30,8 +30,8 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#title': ~
-'#description': ~
+'#title': 'Site name!'
+'#description': 'Site slogan!'
 '#search':
     '#theme': b6a98ae948-MixtapeComponents-SearchForm
     '#attached':
@@ -86,14 +86,51 @@
     '#title': Navigation
     '#items':
         - {  }
-        - {  }
+        -
+            -
+                - {  }
+            - {  }
+            - {  }
+        -
+            - {  }
         - {  }
     '#type': dropdown
     '#cache':
         contexts: {  }
         tags: {  }
         max-age: -1
-'#controls': {  }
+'#controls':
+    -
+        '#theme': 3b90f10624-MixtapeAtoms-Button
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Button
+        '#title': Translate
+        '#href': ~
+        '#as': button
+        '#modifier': ~
+        '#disabled': false
+        '#iconOnly': false
+        '#iconStart': ~
+        '#iconEnd':
+            '#theme': 3b90f10624-MixtapeAtoms-Icon
+            '#attached':
+                library:
+                    - pinto/3b90f10624-MixtapeAtoms-Icon
+            '#icon': chevron-down
+            '#text': ~
+            '#alignmentType': ~
+            '#attributes': {  }
+            '#modifiers': {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
+'#stacked': true
 '#cache':
     contexts: {  }
     tags: {  }
