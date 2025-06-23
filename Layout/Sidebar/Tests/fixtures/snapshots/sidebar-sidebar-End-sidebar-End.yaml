@@ -1,0 +1,23 @@
+'#theme': d1e0ff8fb4-MixtapeLayouts-Sidebar
+'#attached':
+    library:
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Sidebar
+'#content': {  }
+'#sidebarContent': {  }
+'#before': false
+'#attributes':
+    hello: {  }
+    class:
+        - foo
+'#contentAttributes':
+    hello: {  }
+    class:
+        - content-foo
+'#sidebarAttributes':
+    hello: {  }
+    class:
+        - sidebar-foo
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

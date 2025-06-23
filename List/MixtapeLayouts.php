@@ -34,6 +34,9 @@ enum MixtapeLayouts implements ObjectListInterface {
   #[Definition(Layout\Section\Section::class)]
   case Section;
 
+  #[Definition(Layout\Sidebar\Sidebar::class)]
+  case Sidebar;
+
   #[Definition(Layout\Masthead\Masthead::class)]
   #[DependencyOn(MixtapeLayouts::Page)]
   case Masthead;
