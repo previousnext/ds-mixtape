@@ -1,0 +1,40 @@
+'#theme': b6a98ae948-MixtapeComponents-SideNavigation
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-SideNavigation
+'#id': sample-id
+'#title': ~
+'#items':
+    -
+        -
+            - {  }
+        -
+            - {  }
+            - {  }
+            - {  }
+        - {  }
+    -
+        - {  }
+    - {  }
+'#parent':
+    '#theme': c2e75f8655-CommonAtoms-Link
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Link
+    '#title': 'Side navigation top link'
+    '#href': 'http://example.com/'
+    '#more': false
+    '#external': false
+    '#current': true
+    '#download': false
+    '#iconStart': ~
+    '#iconEnd': ~
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

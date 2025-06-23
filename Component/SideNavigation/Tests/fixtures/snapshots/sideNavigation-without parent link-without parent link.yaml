@@ -1,0 +1,23 @@
+'#theme': b6a98ae948-MixtapeComponents-SideNavigation
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-SideNavigation
+'#id': sample-id
+'#title': ~
+'#items':
+    -
+        -
+            - {  }
+        -
+            - {  }
+            - {  }
+            - {  }
+        - {  }
+    -
+        - {  }
+    - {  }
+'#parent': ~
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

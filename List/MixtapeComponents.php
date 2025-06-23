@@ -64,6 +64,9 @@ enum MixtapeComponents implements ObjectListInterface {
   #[TemplateDirectory('Form/Search')]
   case SearchForm;
 
+  #[Definition(Component\SideNavigation\SideNavigation::class)]
+  case SideNavigation;
+
   #[Definition(Component\SocialLinks\SocialLinks::class)]
   case SocialLinks;
 
