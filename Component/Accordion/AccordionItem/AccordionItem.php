@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PreviousNext\Ds\Mixtape\Component\AccordionItem;
+namespace PreviousNext\Ds\Mixtape\Component\Accordion\AccordionItem;
 
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;

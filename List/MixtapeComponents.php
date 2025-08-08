@@ -21,7 +21,7 @@ enum MixtapeComponents implements ObjectListInterface {
   #[Definition(Component\Accordion\Accordion::class)]
   case Accordion;
 
-  #[Definition(Component\AccordionItem\AccordionItem::class)]
+  #[Definition(Component\Accordion\AccordionItem\AccordionItem::class)]
   case AccordionItem;
 
   #[Definition(Component\Breadcrumb\Breadcrumb::class)]

@@ -16,8 +16,8 @@ enum HeroBannerBackground implements HeroBannerModifierInterface {
   public function modifierName(): string {
     return match ($this) {
       static::Dark => 'dark',
-            static::OffWhite => 'off-white',
-            static::Light => 'light',
+      static::OffWhite => 'off-white',
+      static::Light => 'light',
     };
   }
 
