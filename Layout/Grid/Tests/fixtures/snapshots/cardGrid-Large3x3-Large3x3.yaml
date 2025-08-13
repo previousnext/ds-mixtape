@@ -282,7 +282,8 @@
             contexts: {  }
             tags: {  }
             max-age: -1
-'#modifiers': {  }
+'#modifiers':
+    - lg-3
 '#as': div
 '#attributes': {  }
 '#cache':

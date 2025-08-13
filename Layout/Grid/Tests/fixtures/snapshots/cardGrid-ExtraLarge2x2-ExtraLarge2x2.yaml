@@ -189,7 +189,8 @@
             contexts: {  }
             tags: {  }
             max-age: -1
-'#modifiers': {  }
+'#modifiers':
+    - xl-2
 '#as': div
 '#attributes': {  }
 '#cache':
