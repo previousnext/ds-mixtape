@@ -38,7 +38,7 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
       ->set('isContainer', $this->isContainer)
       ->set('content', $this->content?->markup)
       ->set('link', $this->link)
-      ->set('heading', $this->heading?->heading)
+      ->set('heading', $this->heading)
       ->set('modifiers', $modifiers)
       ->set('as', $this->as->element());
   }

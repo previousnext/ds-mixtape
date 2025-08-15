@@ -24,7 +24,7 @@ class Card extends CommonComponent\Card\Card implements Utility\MixtapeObjectInt
       ->set('image', $this->image)
       ->set('links', $this->links)
       ->set('modifiers', $this->modifiers)
-      ->set('heading', $this->heading?->heading)
+      ->set('heading', $this->heading)
       ->set('content', $this->content?->markup)
       ->set('link', $this->link)
       // Mixtape expects a string for tags.

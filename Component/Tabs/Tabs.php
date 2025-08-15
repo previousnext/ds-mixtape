@@ -36,7 +36,7 @@ class Tabs extends CommonComponent\Tabs\Tabs implements Utility\MixtapeObjectInt
 
     return $build
       ->set('id', $this->id)
-      ->set('title', $this->title->heading)
+      ->set('title', $this->title)
       // Mixtape does not use this.
       ->set('listItems', [])
       ->set('items', $tabs);

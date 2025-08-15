@@ -5,7 +5,18 @@
 '#background': alt
 '#container': true
 '#as': section
-'#title': 'Section title'
+'#title':
+    '#theme': c2e75f8655-CommonAtoms-Heading
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Heading
+    '#heading': 'Section title'
+    '#level': h2
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#content': {  }
 '#link': ~
 '#modifiers': {  }

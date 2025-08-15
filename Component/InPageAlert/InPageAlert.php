@@ -24,7 +24,7 @@ class InPageAlert extends CommonComponent\InPageAlert\InPageAlert implements Uti
 
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
-      ->set('heading', $this->heading->heading)
+      ->set('heading', $this->heading)
       ->set('content', $this->content->markup)
     // @todo
       ->set('link', '')
