@@ -17,21 +17,29 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
 #[Slots\Attribute\RenameSlot(original: 'isContainer', new: 'container')]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
-#[Scenarios([CommonLayouts\Section\SectionScenarios::class])]
+#[Scenarios([
+  CommonLayouts\Section\SectionScenarios::class,
+  SectionScenarios::class,
+])]
 class Section extends CommonLayouts\Section\Section implements Utility\MixtapeObjectInterface {
-  // @todo: mixtape has a `background` var.
+
   use Utility\ObjectTrait;
 
   protected function build(Slots\Build $build): Slots\Build {
+    $sectionBackground = $this->modifiers->getFirstInstanceOf(SectionBackground::class);
+
+    $modifiers = [];
+    foreach ($this->modifiers->getInstancesOf(SectionSize::class) as $sectionSize) {
+      $modifiers[] = $sectionSize->modifierName();
+    }
+
     return parent::build($build)
-          // @todo section.twig doesnt have background?
-          //   ->set('background', $this->background)
-      ->set('background', NULL)
+      ->set('background', $sectionBackground?->modifierName())
       ->set('isContainer', $this->isContainer)
       ->set('content', $this->content?->markup)
       ->set('link', $this->link)
       ->set('heading', $this->heading?->heading)
-      ->set('modifiers', [])
+      ->set('modifiers', $modifiers)
       ->set('as', $this->as->element());
   }
 

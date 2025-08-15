@@ -1,0 +1,16 @@
+'#theme': d1e0ff8fb4-MixtapeLayouts-Section
+'#attached':
+    library:
+        - pinto/d1e0ff8fb4-MixtapeLayouts-Section
+'#background': ~
+'#container': true
+'#as': section
+'#title': 'Section title'
+'#content': {  }
+'#link': ~
+'#modifiers': {  }
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1
