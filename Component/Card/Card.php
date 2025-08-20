@@ -15,15 +15,23 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
  */
 #[Asset\Css('card.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
-#[Scenarios([CommonComponent\Card\CardScenarios::class])]
+#[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
+#[Scenarios([
+  CommonComponent\Card\CardScenarios::class,
+  CardScenarios::class,
+])]
 class Card extends CommonComponent\Card\Card implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 
   protected function build(Slots\Build $build): Slots\Build {
+    $this->containerAttributes->addClass(...$this->modifiers->getInstancesOf(CardLayout::class)->map(
+      static fn (CardLayout $modifier): string => \sprintf('mx-card--%s', $modifier->modifierName()),
+    ));
+
     return parent::build($build)
       ->set('image', $this->image)
       ->set('links', $this->links)
-      ->set('modifiers', $this->modifiers)
+      ->set('modifiers', [])
       ->set('heading', $this->heading)
       ->set('content', $this->content?->markup)
       ->set('link', $this->link)

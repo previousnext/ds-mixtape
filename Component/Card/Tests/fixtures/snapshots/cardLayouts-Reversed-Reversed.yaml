@@ -7,10 +7,10 @@
     '#attached':
         library:
             - pinto/3b90f10624-MixtapeAtoms-Image
-    '#src': /300-400-ppb.jpg
+    '#src': /256-256-256px.jpg
     '#alt': Sample
-    '#width': 300
-    '#height': 400
+    '#width': 256
+    '#height': 256
     '#loading': eager
     '#sources': {  }
     '#imageAttributes': {  }
@@ -25,31 +25,13 @@
     '#attached':
         library:
             - pinto/b6a98ae948-MixtapeComponents-LinkList
-    '#items':
-        -
-            '#theme': c2e75f8655-CommonAtoms-Link
-            '#attached':
-                library:
-                    - pinto/c2e75f8655-CommonAtoms-Link
-            '#title': ''
-            '#href': 'http://example.com/'
-            '#more': false
-            '#external': false
-            '#current': false
-            '#download': false
-            '#iconStart': ~
-            '#iconEnd': ~
-            '#attributes': {  }
-            '#cache':
-                contexts: {  }
-                tags: {  }
-                max-age: -1
+    '#items': {  }
     '#modifier': ~
     '#cache':
         contexts: {  }
         tags: {  }
         max-age: -1
-'#date': '1 October 2020'
+'#date': ~
 '#tags': ''
 '#title':
     '#theme': c2e75f8655-CommonAtoms-Heading
@@ -63,10 +45,12 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#content': ~
+'#content': {  }
 '#link': ~
 '#modifiers': {  }
-'#attributes': {  }
+'#attributes':
+    class:
+        - mx-card--reversed
 '#cache':
     contexts: {  }
     tags: {  }
