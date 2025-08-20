@@ -156,7 +156,7 @@ class Page implements Utility\MixtapeObjectInterface {
     $socialLinks[] = CommonAtoms\Link\Link::create('LinkedIn', $url, iconStart: $liIcon);
 
     return Footer::create(
-      logo: CommonAtoms\LinkedImage\LinkedImage::create(
+      logos: CommonAtoms\LinkedImage\LinkedImage::create(
         CommonComponents\Media\Image\Image::createSample(120, 49),
         CommonAtoms\Link\Link::create('LinkedImageText!', $url),
       ),

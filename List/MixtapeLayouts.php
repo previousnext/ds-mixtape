@@ -22,6 +22,7 @@ enum MixtapeLayouts implements ObjectListInterface {
 
   #[Definition(Layout\Footer\Footer::class)]
   #[DependencyOn(MixtapeLayouts::Page)]
+  #[DependencyOn(MixtapeComponents::Navigation)]
   case Footer;
 
   #[Definition(Layout\Grid\GridItem\GridItem::class)]

@@ -30,19 +30,7 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#navigation':
-    '#theme': b6a98ae948-MixtapeComponents-Navigation
-    '#attached':
-        library:
-            - pinto/b6a98ae948-MixtapeComponents-Navigation
-    '#id': id
-    '#title': Navigation
-    '#items': {  }
-    '#type': footer
-    '#cache':
-        contexts: {  }
-        tags: {  }
-        max-age: -1
+'#navigation': ~
 '#links':
     -
         '#theme': c2e75f8655-CommonAtoms-Link

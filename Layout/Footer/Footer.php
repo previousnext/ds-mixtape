@@ -31,11 +31,14 @@ class Footer extends CommonLayouts\Footer\Footer implements Utility\MixtapeObjec
       $navigation[] = $menu;
     }
 
+    $logos = \iterator_to_array($this->logos);
+
     return parent::build($build)
-      ->set('navigation', $navigation)
+      // Set to NULL otherwise wrapper is added.
+      ->set('navigation', \count($navigation) !== 0 ? $navigation : NULL)
       ->set('background', ($this->modifiers->getFirstInstanceOf(FooterBackground::class) ?? FooterBackground::Dark)->background())
       ->set('containerAttributes', $this->containerAttributes)
-      ->set('logo', $this->logo)
+      ->set('logo', \array_shift($logos))
       ->set('socials', $this->socialLinks)
       ->set('modifiers', $this->modifiers)
       ->set('description', $this->description)
