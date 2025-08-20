@@ -18,8 +18,8 @@
                 '#attached':
                     library:
                         - pinto/3b90f10624-MixtapeAtoms-Image
-                '#src': 'https://picsum.photos/seed/2025-06-04/558/418'
-                '#alt': 'Picsum Sample'
+                '#src': /558-418-ppb.jpg
+                '#alt': Sample
                 '#width': 558
                 '#height': 418
                 '#loading': eager
@@ -111,8 +111,8 @@
                 '#attached':
                     library:
                         - pinto/3b90f10624-MixtapeAtoms-Image
-                '#src': 'https://picsum.photos/seed/2025-06-04/558/418'
-                '#alt': 'Picsum Sample'
+                '#src': /558-418-ppb.jpg
+                '#alt': Sample
                 '#width': 558
                 '#height': 418
                 '#loading': eager

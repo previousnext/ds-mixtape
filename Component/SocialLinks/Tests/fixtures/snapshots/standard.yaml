@@ -43,8 +43,8 @@
             '#attached':
                 library:
                     - pinto/3b90f10624-MixtapeAtoms-Image
-            '#src': 'https://picsum.photos/seed/2025-06-04/24/24'
-            '#alt': 'Picsum Sample'
+            '#src': /24-24-128px.jpg
+            '#alt': Sample
             '#width': 24
             '#height': 24
             '#loading': eager
