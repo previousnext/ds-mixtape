@@ -3,10 +3,10 @@
     library:
         - pinto/b6a98ae948-MixtapeComponents-Pagination
 '#previous':
-    '#theme': c2e75f8655-CommonAtoms-Link
+    '#theme': 3b90f10624-MixtapeAtoms-Link
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Link
+            - pinto/3b90f10624-MixtapeAtoms-Link
     '#title': Previous
     '#href': 'http://example.com/'
     '#more': false
@@ -34,10 +34,10 @@
         tags: {  }
         max-age: -1
 '#next':
-    '#theme': c2e75f8655-CommonAtoms-Link
+    '#theme': 3b90f10624-MixtapeAtoms-Link
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Link
+            - pinto/3b90f10624-MixtapeAtoms-Link
     '#title': Next
     '#href': 'http://example.com/'
     '#more': false
@@ -71,10 +71,10 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-PaginationItem
         '#link':
-            '#theme': c2e75f8655-CommonAtoms-Link
+            '#theme': 3b90f10624-MixtapeAtoms-Link
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Link
+                    - pinto/3b90f10624-MixtapeAtoms-Link
             '#title': '1'
             '#href': 'http://example.com/'
             '#more': false
@@ -100,10 +100,10 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-PaginationItem
         '#link':
-            '#theme': c2e75f8655-CommonAtoms-Link
+            '#theme': 3b90f10624-MixtapeAtoms-Link
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Link
+                    - pinto/3b90f10624-MixtapeAtoms-Link
             '#title': '2'
             '#href': 'http://example.com/'
             '#more': false
@@ -141,10 +141,10 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-PaginationItem
         '#link':
-            '#theme': c2e75f8655-CommonAtoms-Link
+            '#theme': 3b90f10624-MixtapeAtoms-Link
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Link
+                    - pinto/3b90f10624-MixtapeAtoms-Link
             '#title': '99'
             '#href': 'http://example.com/'
             '#more': false
@@ -170,10 +170,10 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-PaginationItem
         '#link':
-            '#theme': c2e75f8655-CommonAtoms-Link
+            '#theme': 3b90f10624-MixtapeAtoms-Link
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Link
+                    - pinto/3b90f10624-MixtapeAtoms-Link
             '#title': '100'
             '#href': 'http://example.com/'
             '#more': false

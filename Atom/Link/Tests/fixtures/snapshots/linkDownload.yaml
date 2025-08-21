@@ -1,0 +1,30 @@
+'#theme': 3b90f10624-MixtapeAtoms-Link
+'#attached':
+    library:
+        - pinto/3b90f10624-MixtapeAtoms-Link
+'#title': Example
+'#href': 'http://example.com/'
+'#more': false
+'#external': false
+'#current': false
+'#download': true
+'#iconStart':
+    '#theme': 3b90f10624-MixtapeAtoms-Icon
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Icon
+    '#icon': download
+    '#text': ~
+    '#alignmentType': ~
+    '#attributes': {  }
+    '#modifiers': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#iconEnd': ~
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

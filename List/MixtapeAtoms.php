@@ -25,6 +25,9 @@ enum MixtapeAtoms implements ObjectListInterface {
   #[Definition(Atom\Image\Image::class)]
   case Image;
 
+  #[Definition(Atom\Link\Link::class)]
+  case Link;
+
   #[Definition(Atom\LinkedImage\LinkedImage::class)]
   case LinkedImage;
 

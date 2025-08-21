@@ -19,10 +19,10 @@
         max-age: -1
 '#content': {  }
 '#link':
-    '#theme': c2e75f8655-CommonAtoms-Link
+    '#theme': 3b90f10624-MixtapeAtoms-Link
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Link
+            - pinto/3b90f10624-MixtapeAtoms-Link
     '#title': 'A link for section!'
     '#href': 'http://example.com/'
     '#more': false

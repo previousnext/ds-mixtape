@@ -1,0 +1,17 @@
+'#theme': 3b90f10624-MixtapeAtoms-Link
+'#attached':
+    library:
+        - pinto/3b90f10624-MixtapeAtoms-Link
+'#title': Example
+'#href': 'http://example.com/'
+'#more': false
+'#external': true
+'#current': false
+'#download': false
+'#iconStart': ~
+'#iconEnd': ~
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1
