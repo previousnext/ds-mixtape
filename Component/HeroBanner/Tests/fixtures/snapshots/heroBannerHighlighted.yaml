@@ -14,7 +14,7 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#subtitle': Subtitle!
+'#subtitle': ~
 '#link': ~
 '#image':
     '#theme': 3b90f10624-MixtapeAtoms-Image
@@ -34,7 +34,7 @@
         tags: {  }
         max-age: -1
 '#linkList': ~
-'#highlight': false
+'#highlight': true
 '#modifiers': {  }
 '#containerAttributes': {  }
 '#cache':

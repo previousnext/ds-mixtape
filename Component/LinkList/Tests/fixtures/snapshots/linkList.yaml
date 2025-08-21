@@ -8,7 +8,7 @@
         '#attached':
             library:
                 - pinto/3b90f10624-MixtapeAtoms-Link
-        '#title': ''
+        '#title': Link!
         '#href': 'http://example.com/'
         '#more': false
         '#external': false

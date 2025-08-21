@@ -7,32 +7,33 @@
     '#attached':
         library:
             - pinto/c2e75f8655-CommonAtoms-Heading
-    '#heading': Title!
+    '#heading': 'Hero Link List Title!'
     '#level': h1
     '#attributes': {  }
     '#cache':
         contexts: {  }
         tags: {  }
         max-age: -1
-'#subtitle': Subtitle!
-'#link': ~
-'#image':
-    '#theme': 3b90f10624-MixtapeAtoms-Image
+'#subtitle': ~
+'#link':
+    '#theme': 3b90f10624-MixtapeAtoms-Link
     '#attached':
         library:
-            - pinto/3b90f10624-MixtapeAtoms-Image
-    '#src': /600-200-ppb.jpg
-    '#alt': Sample
-    '#width': 600
-    '#height': 200
-    '#loading': eager
-    '#sources': {  }
-    '#imageAttributes': {  }
-    '#containerAttributes': {  }
+            - pinto/3b90f10624-MixtapeAtoms-Link
+    '#title': 'Hero Banner Link!'
+    '#href': 'http://example.com/'
+    '#more': false
+    '#external': false
+    '#current': false
+    '#download': false
+    '#iconStart': ~
+    '#iconEnd': ~
+    '#attributes': {  }
     '#cache':
         contexts: {  }
         tags: {  }
         max-age: -1
+'#image': ~
 '#linkList': ~
 '#highlight': false
 '#modifiers': {  }
