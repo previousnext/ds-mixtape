@@ -168,7 +168,8 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#main': 'Foo Bar'
+'#main':
+    - 'Foo Bar'
 '#footer':
     '#theme': d1e0ff8fb4-MixtapeLayouts-Footer
     '#attached':

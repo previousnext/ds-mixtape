@@ -36,7 +36,7 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
     return parent::build($build)
       ->set('background', $sectionBackground?->modifierName())
       ->set('isContainer', $this->isContainer)
-      ->set('content', $this->content?->markup)
+      ->set('content', $this->content !== NULL ? [$this->content->markup] : [])
       ->set('link', $this->link)
       ->set('heading', $this->heading)
       ->set('modifiers', $modifiers)

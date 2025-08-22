@@ -17,7 +17,8 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#content': {  }
+'#content':
+    - {  }
 '#link':
     '#theme': 3b90f10624-MixtapeAtoms-Link
     '#attached':

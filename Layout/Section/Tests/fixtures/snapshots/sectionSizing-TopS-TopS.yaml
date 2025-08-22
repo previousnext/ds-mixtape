@@ -17,7 +17,8 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#content': {  }
+'#content':
+    - {  }
 '#link': ~
 '#modifiers':
     - top-s

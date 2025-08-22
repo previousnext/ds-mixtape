@@ -11,6 +11,7 @@ use PreviousNext\Ds\Common\Component\ListItem\InfoPosition;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
+#[Asset\Css('card.css', preprocess: TRUE)]
 #[Asset\Css('list-item.css', preprocess: TRUE)]
 #[Scenarios([CommonComponent\ListItem\ListItemScenarios::class])]
 #[Slots\Attribute\ModifySlots(add: [

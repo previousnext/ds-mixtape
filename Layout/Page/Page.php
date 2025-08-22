@@ -107,7 +107,7 @@ class Page implements Utility\MixtapeObjectInterface {
     $header->modifiers[] = HeaderLayout::Stacked;
 
     return $build
-      ->set('main', $this->content)
+      ->set('main', [$this->content])
       ->set('masthead', (CommonLayouts\Masthead\Masthead::create(
         content: Html::create(Markup::create('A PreviousNext Product')),
         links: [CommonAtoms\Link\Link::create('Link 1', $url)],
