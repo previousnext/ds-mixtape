@@ -33,10 +33,14 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
       $modifiers[] = $sectionSize->modifierName();
     }
 
+    $content = $this->map(static function (CommonLayouts\Section\SectionItem $item): mixed {
+      return \is_callable($item->content) ? ($item->content)() : $item->content;
+    })->toArray();
+
     return parent::build($build)
       ->set('background', $sectionBackground?->modifierName())
       ->set('isContainer', $this->isContainer)
-      ->set('content', $this->content !== NULL ? [$this->content->markup] : [])
+      ->set('content', $content)
       ->set('link', $this->link)
       ->set('heading', $this->heading)
       ->set('modifiers', $modifiers)

@@ -19,8 +19,8 @@ final class SectionScenarios {
       $instance = Layout\Section\Section::create(
         heading: 'Section title',
         as: Layout\Section\SectionType::Section,
-        content: Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>')),
       );
+      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
       $instance->modifiers[] = $sectionBackground;
       yield $sectionBackground->name => $instance;
     }
@@ -31,8 +31,8 @@ final class SectionScenarios {
       $instance = Layout\Section\Section::create(
         heading: 'Section title',
         as: Layout\Section\SectionType::Section,
-        content: Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>')),
       );
+      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
       $instance->modifiers[] = $sectionSize;
       yield $sectionSize->name => $instance;
     }
