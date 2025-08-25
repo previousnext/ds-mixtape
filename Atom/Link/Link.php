@@ -23,11 +23,11 @@ class Link extends CommonAtoms\Link\Link implements Utility\MixtapeObjectInterfa
   protected static function constructInstance(...$args): static {
     $instance = parent::constructInstance(...$args);
 
-    if ($instance->more && $instance->iconEnd === NULL) {
+    if ($instance->more && $instance->iconEnd instanceof CommonAtoms\DefaultInstance) {
       $instance->iconEnd = CommonAtoms\Icon\Icon::create('arrow-right');
     }
 
-    if ($instance->download && $instance->iconStart === NULL) {
+    if ($instance->download && $instance->iconStart instanceof CommonAtoms\DefaultInstance) {
       $instance->iconStart = CommonAtoms\Icon\Icon::create('download');
     }
 

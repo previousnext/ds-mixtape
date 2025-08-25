@@ -8,20 +8,7 @@
 '#external': false
 '#current': false
 '#download': true
-'#iconStart':
-    '#theme': 3b90f10624-MixtapeAtoms-Icon
-    '#attached':
-        library:
-            - pinto/3b90f10624-MixtapeAtoms-Icon
-    '#icon': download
-    '#text': ~
-    '#alignmentType': ~
-    '#attributes': {  }
-    '#modifiers': {  }
-    '#cache':
-        contexts: {  }
-        tags: {  }
-        max-age: -1
+'#iconStart': ~
 '#iconEnd': ~
 '#attributes': {  }
 '#cache':

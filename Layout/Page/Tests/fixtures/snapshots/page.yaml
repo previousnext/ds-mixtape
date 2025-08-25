@@ -292,25 +292,7 @@
                 '#external': false
                 '#current': false
                 '#download': false
-                '#iconStart':
-                    '#theme': 3b90f10624-MixtapeAtoms-Icon
-                    '#attached':
-                        library:
-                            - pinto/3b90f10624-MixtapeAtoms-Icon
-                    '#icon': facebook
-                    '#text': ~
-                    '#alignmentType': ~
-                    '#attributes':
-                        class:
-                            - mx-icon--size-md
-                    '#modifiers':
-                        - facebook
-                        -
-                            name: Medium
-                    '#cache':
-                        contexts: {  }
-                        tags: {  }
-                        max-age: -1
+                '#iconStart': ~
                 '#iconEnd': ~
                 '#attributes': {  }
                 '#cache':
@@ -328,25 +310,7 @@
                 '#external': false
                 '#current': false
                 '#download': false
-                '#iconStart':
-                    '#theme': 3b90f10624-MixtapeAtoms-Icon
-                    '#attached':
-                        library:
-                            - pinto/3b90f10624-MixtapeAtoms-Icon
-                    '#icon': instagram
-                    '#text': ~
-                    '#alignmentType': ~
-                    '#attributes':
-                        class:
-                            - mx-icon--size-md
-                    '#modifiers':
-                        - instagram
-                        -
-                            name: Medium
-                    '#cache':
-                        contexts: {  }
-                        tags: {  }
-                        max-age: -1
+                '#iconStart': ~
                 '#iconEnd': ~
                 '#attributes': {  }
                 '#cache':
@@ -364,25 +328,7 @@
                 '#external': false
                 '#current': false
                 '#download': false
-                '#iconStart':
-                    '#theme': 3b90f10624-MixtapeAtoms-Icon
-                    '#attached':
-                        library:
-                            - pinto/3b90f10624-MixtapeAtoms-Icon
-                    '#icon': linkedin
-                    '#text': ~
-                    '#alignmentType': ~
-                    '#attributes':
-                        class:
-                            - mx-icon--size-md
-                    '#modifiers':
-                        - linkedin
-                        -
-                            name: Medium
-                    '#cache':
-                        contexts: {  }
-                        tags: {  }
-                        max-age: -1
+                '#iconStart': ~
                 '#iconEnd': ~
                 '#attributes': {  }
                 '#cache':
