@@ -40,7 +40,7 @@ class Card extends CommonComponent\Card\Card implements Utility\MixtapeObjectInt
         return $tag->title;
       }, $this->tags->toArray())))
       ->set('date', $this->date?->format('j F Y'))
-      ->set('icon', '🐴');
+      ->set('icon', $this->icon);
   }
 
 }

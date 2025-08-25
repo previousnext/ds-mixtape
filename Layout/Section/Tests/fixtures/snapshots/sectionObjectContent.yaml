@@ -24,7 +24,7 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-Card
         '#image': ~
-        '#icon': 🐴
+        '#icon': ~
         '#links':
             '#theme': b6a98ae948-MixtapeComponents-LinkList
             '#attached':

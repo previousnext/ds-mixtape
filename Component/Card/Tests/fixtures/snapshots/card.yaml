@@ -19,7 +19,7 @@
         contexts: {  }
         tags: {  }
         max-age: -1
-'#icon': 🐴
+'#icon': ~
 '#links':
     '#theme': b6a98ae948-MixtapeComponents-LinkList
     '#attached':
