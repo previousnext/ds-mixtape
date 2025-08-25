@@ -1,8 +1,22 @@
+includes:
+	# Regenerate with `make phpstan-baseline`
+	# Generate in container so you have the same version of PHP, otherwise you may
+	# get different errors.
+	- phpstan-baseline.php
+
 parameters:
 	level: 9
 	paths:
-		- .
-	excludePaths:
-		analyse:
-			- vendor
+		- Layout/
+		- Component/
+		- Atom/
+		- List/
+		- Utility/
+	scanDirectories:
+		- vendor/drupal/pinto
 	reportUnmatchedIgnoredErrors: true
+	ignoreErrors:
+		- identifier: varTag.type
+		- identifier: classConstant.notFound
+	stubFiles:
+		- .phpstan/stubs/Drupal.stub

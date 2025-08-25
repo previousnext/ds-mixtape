@@ -2,19 +2,25 @@
     "name": "previousnext/ds-mixtape",
     "type": "library",
     "version": "0.0.1",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=8.2",
-        "previousnext/ds-common": "*",
-        "ramsey/collection": "^2.1.1",
-        "thecodingmachine/safe": "^2.5 || ^3.1",
-        "dpi/pinto": "^0.4.1"
+        "previousnext/ds-common": "*@dev"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.75",
+        "brianium/paratest": "^7.8",
+        "drupal/pinto": "0.5.1",
+        "drupal/pinto_block": "0.2.0",
+        "mockery/mockery": "^1.6.12",
+        "phpspec/prophecy-phpunit": "^2.4",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^1.12.23",
-        "phpstan/phpstan-strict-rules": "^1.6.2",
-        "phpstan/phpstan-deprecation-rules": "^1.2.1"
+        "phpstan/phpstan": "^2.1.22",
+        "phpstan/phpstan-deprecation-rules": "^2.0.3",
+        "phpstan/phpstan-mockery": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0.6",
+        "phpunit/php-file-iterator": "6.0.0 as 5.1.0",
+        "phpunit/phpunit": "^11.5.34",
+        "previousnext/ids-tools": "*@dev"
     },
     "repositories": [
         {
@@ -27,8 +33,10 @@
         }
     ],
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "symfony/runtime": true
         }
     },
     "authors": [
@@ -41,6 +49,11 @@
         "psr-4": {
             "PreviousNext\\Ds\\Mixtape\\": "."
         }
+    },
+    "autoload-dev": {
+        "files": [
+            "bootstrap.php"
+        ]
     },
     "license": "proprietary"
 }

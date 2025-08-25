@@ -1,0 +1,17 @@
+# Overrides default configuration in monorepo.
+# File only used in split repo.
+parameters:
+  ids.design_system: '%env(DESIGN_SYSTEM)%'
+  ids.design_systems:
+    mixtape:
+      ds: !php/const PreviousNext\Ds\Mixtape\List\MixtapeLists::Lists
+      additional:
+        - !php/const PreviousNext\Ds\Common\List\CommonLists::Lists
+
+  ids.build_objects:
+    directory: '/Tests/fixtures/snapshots'
+
+  # IDS dumper:
+  ids.ide: 'phpstorm'
+  ids.project_dir: '%env(PROJECT_DIR)%'
+  ids.webdriver.url: ''

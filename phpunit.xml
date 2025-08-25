@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+         cacheDirectory=".phpunit.cache"
+         executionOrder="depends,defects"
+         beStrictAboutCoverageMetadata="true"
+         beStrictAboutOutputDuringTests="true"
+         displayDetailsOnPhpunitDeprecations="true"
+         failOnPhpunitDeprecation="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         colors="true">
+    <testsuites>
+        <testsuite name="default">
+            <directory>vendor/previousnext/ds-common/Tests</directory>
+            <directory>Atom/**/Tests</directory>
+            <directory>Layout/**/Tests</directory>
+            <directory>Component/**/Tests</directory>
+            <directory>List/**/Tests</directory>
+            <directory>Utility/**/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <source>
+        <include>
+            <directory suffix=".php">Atom</directory>
+            <directory suffix=".php">Layout</directory>
+            <directory suffix=".php">Component</directory>
+            <directory suffix=".php">List</directory>
+            <directory suffix=".php">Utility</directory>
+        </include>
+        <exclude>
+            <directory>vendor</directory>
+        </exclude>
+    </source>
+
+    <coverage>
+        <report>
+            <html outputDirectory="coverage-html" lowUpperBound="75" highLowerBound="95"/>
+        </report>
+    </coverage>
+</phpunit>

@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Common\Component\Card\Tests;
 
-use PHPUnit\Framework\Attributes\CoversMethod;
 use PHPUnit\Framework\TestCase;
 use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Mixtape\Atom;
 use PreviousNext\Ds\Mixtape\Atom\Icon\Icon;
 use PreviousNext\IdsTools\DependencyInjection\IdsContainer;
 
-#[CoversMethod(Icon::class, 'createMixtapeIcon')]
 class IconTest extends TestCase {
 
   protected function setUp(): void {

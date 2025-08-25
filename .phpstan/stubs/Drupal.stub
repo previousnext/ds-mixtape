@@ -1,0 +1,26 @@
+<?php
+declare(strict_types=1);
+namespace Drupal\Core\Template {
+
+  class Attribute {
+    /**
+     * @phpstan-return ($offset is 'class' ? true : bool)
+     */
+    public function offsetExists(string $offset): bool {}
+
+    /**
+     * @phpstan-return ($offset is 'class' ? string[] : mixed)
+     */
+    public function offsetGet(string $offset) {}
+  }
+}
+
+namespace Drupal\Component\Render {
+  trait MarkupTrait {
+    /**
+     * @phpstan-return \Drupal\Component\Render\MarkupInterface
+     */
+    public static function create($string) {
+    }
+  }
+}
