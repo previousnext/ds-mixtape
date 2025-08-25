@@ -190,7 +190,7 @@
             tags: {  }
             max-age: -1
 '#modifiers':
-    - xl-2
+    - md-3
 '#as': div
 '#attributes': {  }
 '#cache':

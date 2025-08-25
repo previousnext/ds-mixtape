@@ -28,12 +28,7 @@ final class GridScenarios {
        [GridColumnSizeModifier::Medium3, 6],
     ] as [$gridColumnSizeModifier, $cardQuantity]) {
       $instance = Grid::create(as:GridType::Div, gridItemDefaultType: GridItem\GridItemType::Div);
-      if (\class_exists(\PreviousNext\Ds\Nsw\Layout\Grid\GridColumnSizeModifier::class)) {
-        $instance->modifiers[] = $gridColumnSizeModifier;
-      }
-      elseif (\class_exists(GridColumnSizeModifier::class)) {
-        $instance->modifiers[] = GridColumnSizeModifier::Medium3;
-      }
+      $instance->modifiers[] = GridColumnSizeModifier::Medium3;
 
       for ($i = 0; $i < $cardQuantity; $i++) {
         $instance[] = Component\Card\Card::create(
@@ -48,7 +43,6 @@ final class GridScenarios {
             </p>
             MARKUP)),
           link: Atom\Link\Link::create(title: 'Card Link!', url: $url),
-        // modifiers: [Component\Card\CommonCardModifiers::Modifier1],.
         )();
       }
 

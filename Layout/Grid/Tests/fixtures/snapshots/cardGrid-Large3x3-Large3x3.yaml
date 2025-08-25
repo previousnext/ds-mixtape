@@ -283,7 +283,7 @@
             tags: {  }
             max-age: -1
 '#modifiers':
-    - lg-3
+    - md-3
 '#as': div
 '#attributes': {  }
 '#cache':
