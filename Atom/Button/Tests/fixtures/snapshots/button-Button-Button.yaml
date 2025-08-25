@@ -5,11 +5,11 @@
 '#title': 'Link button'
 '#href': ~
 '#as': button
-'#modifier': ~
 '#disabled': false
 '#iconOnly': false
 '#iconStart': ~
 '#iconEnd': ~
+'#modifiers': {  }
 '#cache':
     contexts: {  }
     tags: {  }

@@ -49,7 +49,6 @@
         '#title': Search
         '#href': ~
         '#as': submit
-        '#modifier': ~
         '#disabled': false
         '#iconOnly': true
         '#iconStart':
@@ -69,6 +68,7 @@
                 tags: {  }
                 max-age: -1
         '#iconEnd': ~
+        '#modifiers': {  }
         '#cache':
             contexts: {  }
             tags: {  }
@@ -108,7 +108,6 @@
         '#title': Translate
         '#href': ~
         '#as': button
-        '#modifier': ~
         '#disabled': false
         '#iconOnly': false
         '#iconStart': ~
@@ -126,6 +125,7 @@
                 contexts: {  }
                 tags: {  }
                 max-age: -1
+        '#modifiers': {  }
         '#cache':
             contexts: {  }
             tags: {  }

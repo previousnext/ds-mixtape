@@ -58,7 +58,6 @@
         '#title': Translate
         '#href': ~
         '#as': button
-        '#modifier': ~
         '#disabled': false
         '#iconOnly': false
         '#iconStart': ~
@@ -76,6 +75,7 @@
                 contexts: {  }
                 tags: {  }
                 max-age: -1
+        '#modifiers': {  }
         '#cache':
             contexts: {  }
             tags: {  }

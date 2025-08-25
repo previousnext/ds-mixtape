@@ -2,14 +2,15 @@
 '#attached':
     library:
         - pinto/3b90f10624-MixtapeAtoms-Button
-'#title': 'Link button'
-'#href': 'http://example.com/'
-'#as': link
+'#title': Button
+'#href': ~
+'#as': button
 '#disabled': false
 '#iconOnly': false
 '#iconStart': ~
 '#iconEnd': ~
-'#modifiers': {  }
+'#modifiers':
+    - dark
 '#cache':
     contexts: {  }
     tags: {  }

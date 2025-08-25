@@ -1,0 +1,57 @@
+'#theme': b6a98ae948-MixtapeComponents-Card
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Card
+'#image': ~
+'#icon':
+    '#theme': 3b90f10624-MixtapeAtoms-Icon
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Icon
+    '#icon': heart-selected
+    '#text': ~
+    '#alignmentType': ~
+    '#attributes':
+        class:
+            - mx-icon--size-md
+    '#modifiers':
+        - heart-selected
+        -
+            name: Medium
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#links':
+    '#theme': b6a98ae948-MixtapeComponents-LinkList
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-LinkList
+    '#items': {  }
+    '#modifier': ~
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#date': ~
+'#tags': {  }
+'#title':
+    '#theme': c2e75f8655-CommonAtoms-Heading
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Heading
+    '#heading': Example!
+    '#level': h2
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#content': {  }
+'#link': ~
+'#modifiers': {  }
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

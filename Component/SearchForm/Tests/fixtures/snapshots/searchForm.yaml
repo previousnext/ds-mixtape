@@ -14,7 +14,6 @@
     '#title': Search
     '#href': ~
     '#as': submit
-    '#modifier': ~
     '#disabled': false
     '#iconOnly': true
     '#iconStart':
@@ -34,6 +33,7 @@
             tags: {  }
             max-age: -1
     '#iconEnd': ~
+    '#modifiers': {  }
     '#cache':
         contexts: {  }
         tags: {  }

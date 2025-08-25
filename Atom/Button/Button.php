@@ -16,6 +16,9 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
  */
 #[Css('button.css', preprocess: TRUE)]
 #[Scenarios([CommonAtom\Button\ButtonScenarios::class])]
+#[Slots\Attribute\ModifySlots(add: [
+  'modifiers',
+])]
 class Button extends CommonAtom\Button\Button implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
@@ -27,10 +30,30 @@ class Button extends CommonAtom\Button\Button implements Utility\MixtapeObjectIn
       ButtonType::Button, ButtonType::Input, ButtonType::Link, ButtonType::Submit => $this->as->name,
     });
 
+    $modifiers = [];
+    if (NULL !== ($buttonStyle = $this->modifiers->getFirstInstanceOf(CommonAtom\Button\ButtonStyle::class))) {
+      $modifiers[] = match ($buttonStyle) {
+        // Suffixes for 'mx-button--' in button.twig.
+        CommonAtom\Button\ButtonStyle::Dark => 'dark',
+        CommonAtom\Button\ButtonStyle::Destructive => 'destructive',
+        CommonAtom\Button\ButtonStyle::Light => 'light',
+        CommonAtom\Button\ButtonStyle::Outline => 'outline',
+        CommonAtom\Button\ButtonStyle::White => 'white',
+      };
+    }
+
+    if (NULL !== ($buttonLayout = $this->modifiers->getFirstInstanceOf(CommonAtom\Button\ButtonLayout::class))) {
+      $modifiers[] = match ($buttonLayout) {
+        // Suffixes for 'mx-button--' in button.twig.
+        CommonAtom\Button\ButtonLayout::FullWidth => 'full-width',
+      };
+    }
+
     return parent::build($build)
       ->set('title', $this->title)
       ->set('href', $this->href)
-      ->set('as', $as);
+      ->set('as', $as)
+      ->set('modifiers', $modifiers);
   }
 
 }
