@@ -37,6 +37,7 @@
     <coverage>
         <report>
             <html outputDirectory="coverage-html" lowUpperBound="75" highLowerBound="95"/>
+            <cobertura outputFile="coverage-cobertura.xml"/>
         </report>
     </coverage>
 </phpunit>

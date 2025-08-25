@@ -5,4 +5,5 @@ vendor/
 composer.lock
 output
 coverage-html
+coverage-cobertura.xml
 .env

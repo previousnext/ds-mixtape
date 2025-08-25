@@ -24,10 +24,6 @@
     },
     "repositories": [
         {
-            "type": "git",
-            "url": "git@github.com:previousnext/interchangeable-ds.git"
-        },
-        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
