@@ -13,7 +13,10 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 
 #[Css('hero-banner.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'links', new: 'linkList')]
-#[Scenarios([CommonComponent\HeroBanner\HeroBannerScenarios::class])]
+#[Scenarios([
+  CommonComponent\HeroBanner\HeroBannerScenarios::class,
+  HeroBannerScenarios::class,
+])]
 class HeroBanner extends CommonComponent\HeroBanner\HeroBanner implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 
