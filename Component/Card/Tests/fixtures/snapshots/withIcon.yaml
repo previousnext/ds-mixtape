@@ -34,7 +34,7 @@
         tags: {  }
         max-age: -1
 '#date': ~
-'#tags': ''
+'#tags': ~
 '#title':
     '#theme': c2e75f8655-CommonAtoms-Heading
     '#attached':

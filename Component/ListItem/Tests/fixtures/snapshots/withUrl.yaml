@@ -21,7 +21,7 @@
         tags: {  }
         max-age: -1
 '#image': ~
-'#tags': ''
+'#tags': ~
 '#content': {  }
 '#label': ~
 '#info': 'https://example.com/some-thing'

@@ -1,0 +1,30 @@
+'#theme': b6a98ae948-MixtapeComponents-Tags
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Tags
+'#items':
+    -
+        id: {  }
+        name: foo-checkboxes
+        value: value-0
+        checked: false
+        label: 'Tag 0'
+    -
+        id: {  }
+        name: foo-checkboxes
+        value: value-1
+        checked: true
+        label: 'Tag 1'
+    -
+        id: {  }
+        name: foo-checkboxes
+        value: value-2
+        checked: false
+        label: 'Tag 2'
+'#containerAttributes': {  }
+'#tagType': checkbox
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

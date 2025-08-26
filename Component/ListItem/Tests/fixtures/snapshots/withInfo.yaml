@@ -21,7 +21,7 @@
         tags: {  }
         max-age: -1
 '#image': ~
-'#tags': ''
+'#tags': ~
 '#content': {  }
 '#label': Publication
 '#info': '25 May 2025'

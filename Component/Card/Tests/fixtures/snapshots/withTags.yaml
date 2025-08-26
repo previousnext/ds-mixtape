@@ -2,23 +2,7 @@
 '#attached':
     library:
         - pinto/b6a98ae948-MixtapeComponents-Card
-'#image':
-    '#theme': 3b90f10624-MixtapeAtoms-Image
-    '#attached':
-        library:
-            - pinto/3b90f10624-MixtapeAtoms-Image
-    '#src': /256-256-256px.jpg
-    '#alt': Sample
-    '#width': 256
-    '#height': 256
-    '#loading': eager
-    '#sources': {  }
-    '#imageAttributes': {  }
-    '#containerAttributes': {  }
-    '#cache':
-        contexts: {  }
-        tags: {  }
-        max-age: -1
+'#image': ~
 '#icon': ~
 '#links':
     '#theme': b6a98ae948-MixtapeComponents-LinkList
@@ -32,7 +16,22 @@
         tags: {  }
         max-age: -1
 '#date': ~
-'#tags': ~
+'#tags':
+    '#theme': b6a98ae948-MixtapeComponents-Tags
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-Tags
+    '#items':
+        - 'Tag 1'
+        - 'Tag 2'
+        - 'Tag 3'
+    '#containerAttributes': {  }
+    '#tagType': text
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#title':
     '#theme': c2e75f8655-CommonAtoms-Heading
     '#attached':
@@ -48,9 +47,7 @@
 '#content': {  }
 '#link': ~
 '#modifiers': {  }
-'#attributes':
-    class:
-        - mx-card--block
+'#attributes': {  }
 '#cache':
     contexts: {  }
     tags: {  }

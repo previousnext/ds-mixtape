@@ -1,0 +1,21 @@
+'#theme': b6a98ae948-MixtapeComponents-Tags
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Tags
+'#items':
+    -
+        title: 'Tag 1'
+        href: 'http://example.com/'
+    -
+        title: 'Tag 2'
+        href: 'http://example.com/'
+    -
+        title: 'Tag 3'
+        href: 'http://example.com/'
+'#containerAttributes': {  }
+'#tagType': link
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

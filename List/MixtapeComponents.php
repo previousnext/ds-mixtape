@@ -16,7 +16,9 @@ use PreviousNext\Ds\Mixtape\Component;
 #[DependencyOn(MixtapeGlobal::Global)]
 enum MixtapeComponents implements ObjectListInterface {
 
-  use MixtapeListTrait;
+  use MixtapeListTrait {
+    MixtapeListTrait::dsDirectory as public originalDsDirectory;
+  }
 
   #[Definition(Component\Accordion\Accordion::class)]
   case Accordion;
@@ -84,5 +86,16 @@ enum MixtapeComponents implements ObjectListInterface {
 
   #[Definition(Component\Tabs\TabsItem\TabsItem::class)]
   case TabItem;
+
+  #[Definition(Component\Tags\Tags::class)]
+  case Tags;
+
+  private function dsDirectory(): string {
+    if ($this === MixtapeComponents::Tags) {
+      return 'Component/Tag';
+    }
+
+    return $this->originalDsDirectory();
+  }
 
 }

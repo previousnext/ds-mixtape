@@ -37,8 +37,7 @@ class ListItem extends CommonComponent\ListItem\ListItem implements Utility\Mixt
       ->set('modifiers', $modifiers)
       ->set('infoBefore', $this->infoPosition === InfoPosition::Before)
       ->set('info', $this->infoPosition === InfoPosition::None ? NULL : $this->info)
-      // Mixtape expects a string for tags.
-      ->set('tags', \implode(' ', \array_map(static fn ($tag) => $tag->title, $this->tags->toArray())));
+      ->set('tags', $this->tags->count() > 0 ? $this->tags : NULL);
   }
 
 }
