@@ -9,7 +9,20 @@
 '#current': false
 '#download': false
 '#iconStart': ~
-'#iconEnd': ~
+'#iconEnd':
+    '#theme': 3b90f10624-MixtapeAtoms-Icon
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Icon
+    '#icon': arrow-right
+    '#text': ~
+    '#alignmentType': ~
+    '#attributes': {  }
+    '#modifiers': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#attributes': {  }
 '#cache':
     contexts: {  }
