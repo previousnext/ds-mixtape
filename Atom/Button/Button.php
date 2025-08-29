@@ -11,9 +11,6 @@ use PreviousNext\Ds\Common\Atom\Button\ButtonType;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-/**
- * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-buttons
- */
 #[Css('button.css', preprocess: TRUE)]
 #[Scenarios([CommonAtom\Button\ButtonScenarios::class])]
 #[Slots\Attribute\ModifySlots(add: [

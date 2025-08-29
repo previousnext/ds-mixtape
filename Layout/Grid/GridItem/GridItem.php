@@ -8,9 +8,6 @@ use Pinto\Slots;
 use PreviousNext\Ds\Common\Layout as CommonLayout;
 use PreviousNext\Ds\Mixtape\Utility;
 
-/**
- * @see https://mixtape.pnx.io/section-layout.html#kssref-layout-grid
- */
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 class GridItem extends CommonLayout\Grid\GridItem\GridItem implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;

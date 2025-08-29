@@ -10,9 +10,6 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-/**
- * @see https://mixtape.pnx.io/section-elements.html#kssref-elements-messages
- */
 #[Css('in-page-alert.css', preprocess: TRUE)]
 #[Slots\Attribute\ModifySlots(add: [
   // Unique to Mixtape:

@@ -9,9 +9,6 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Common\Component\Media\Image\ImageSource;
 use PreviousNext\Ds\Mixtape\Utility;
 
-/**
- * @see https://mixtape.pnx.io/section-base.html#kssref-base-images
- */
 #[Slots\Attribute\RenameSlot(original: 'source', new: 'src')]
 #[Slots\Attribute\RenameSlot(original: 'altText', new: 'alt')]
 #[Slots\Attribute\RenameSlot(original: 'loadingType', new: 'loading')]

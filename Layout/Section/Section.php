@@ -10,9 +10,6 @@ use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-/**
- * @see https://mixtape.pnx.io/section-layout.html#kssref-layout-section
- */
 #[Css('section.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
 #[Slots\Attribute\RenameSlot(original: 'isContainer', new: 'container')]
