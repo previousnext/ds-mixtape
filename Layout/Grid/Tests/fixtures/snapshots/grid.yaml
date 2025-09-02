@@ -8,7 +8,8 @@
         '#attached':
             library:
                 - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
-        '#item': {  }
+        '#item':
+            - {  }
         '#isContainer': true
         '#modifiers': {  }
         '#as': li
@@ -22,7 +23,8 @@
         '#attached':
             library:
                 - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
-        '#item': {  }
+        '#item':
+            - {  }
         '#isContainer': true
         '#modifiers': {  }
         '#as': div
