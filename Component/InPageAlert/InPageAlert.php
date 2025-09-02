@@ -16,6 +16,7 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
   'closable',
 ])]
 #[Scenarios([CommonComponent\InPageAlert\InPageAlertScenarios::class])]
+#[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
 class InPageAlert extends CommonComponent\InPageAlert\InPageAlert implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 
@@ -23,8 +24,7 @@ class InPageAlert extends CommonComponent\InPageAlert\InPageAlert implements Uti
     return parent::build($build)
       ->set('heading', $this->heading)
       ->set('content', $this->content->markup)
-    // @todo
-      ->set('link', '')
+      ->set('link', $this->link)
       ->set('type', \strtolower($this->type->name))
       ->set('closable', TRUE);
   }

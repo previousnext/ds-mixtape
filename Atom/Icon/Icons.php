@@ -9,6 +9,8 @@ use PreviousNext\Ds\Common\Modifier\Mutex;
 
 /**
  * Note that you dont need to use this class, you can just pass a string to the `icon` parameter of Icon atom.
+ *
+ * From mxds/enums.ts.
  */
 #[Mutex]
 enum Icons: string implements IconModifierInterface {
