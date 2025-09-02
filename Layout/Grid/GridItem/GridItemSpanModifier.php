@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace PreviousNext\Ds\Mixtape\Layout\Grid;
+namespace PreviousNext\Ds\Mixtape\Layout\Grid\GridItem;
 
-use PreviousNext\Ds\Common\Layout\Grid\GridModifierInterface;
+use PreviousNext\Ds\Common\Layout\Grid\GridItem\GridItemModifierInterface;
 
 /**
- * The viewport width media query at which the grid takes effect, and number of columns.
+ * The viewport width media query at which the grid takes effect, and number of columns to span.
  */
-enum GridColumnSizeModifier implements GridModifierInterface {
+enum GridItemSpanModifier implements GridItemModifierInterface {
 
   case ExtraLarge2;
   case ExtraLarge3;
@@ -24,9 +24,9 @@ enum GridColumnSizeModifier implements GridModifierInterface {
   case Small2;
 
   /**
-   * Combined in grid.twig to produce a size class.
+   * Combined in grid-item.twig to produce a span class.
    */
-  public function classPart(): string {
+  public function modifierName(): string {
     return match ($this) {
       self::ExtraLarge2 => 'xl-2',
       self::ExtraLarge3 => 'xl-3',

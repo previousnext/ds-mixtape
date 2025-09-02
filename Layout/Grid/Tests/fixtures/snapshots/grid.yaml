@@ -9,7 +9,16 @@
             library:
                 - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
         '#item':
-            - {  }
+            -
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#markup': {  }
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
         '#isContainer': true
         '#modifiers': {  }
         '#as': li
@@ -24,7 +33,16 @@
             library:
                 - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
         '#item':
-            - {  }
+            -
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#markup': {  }
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
         '#isContainer': true
         '#modifiers': {  }
         '#as': div

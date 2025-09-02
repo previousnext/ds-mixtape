@@ -9,15 +9,19 @@ use PreviousNext\Ds\Common\Layout as CommonLayout;
 use PreviousNext\Ds\Mixtape\Utility;
 
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
+#[Slots\Attribute\RenameSlot(original: 'content', new: 'item')]
 class GridItem extends CommonLayout\Grid\GridItem\GridItem implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 
   protected function build(Slots\Build $build): Slots\Build {
-    // @todo handle modifiers...
     $modifiers = [];
 
+    foreach ($this->modifiers->getInstancesOf(GridItemSpanModifier::class) as $span) {
+      $modifiers[] = $span->modifierName();
+    }
+
     return parent::build($build)
-      ->set('modifiers', \array_values($modifiers))
+      ->set('modifiers', $modifiers)
       ->set('as', $this->as->element());
   }
 
