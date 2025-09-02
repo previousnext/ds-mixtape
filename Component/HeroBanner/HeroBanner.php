@@ -33,7 +33,8 @@ class HeroBanner extends CommonComponent\HeroBanner\HeroBanner implements Utilit
       ->set('link', $this->link)
       ->set('image', $this->image)
       ->set('highlight', $this->highlight)
-      ->set('links', $this->links);
+      // Only image or links are allowed in mixtape. Need to nullify the object if links object is empty.
+      ->set('links', $this->links !== NULL && $this->links->count() !== 0 ? $this->links : NULL);
   }
 
 }
