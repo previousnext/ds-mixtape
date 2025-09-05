@@ -7,7 +7,7 @@ namespace PreviousNext\Ds\Mixtape\List;
 final class MixtapeLists {
 
   /**
-   * @var class-string<\Pinto\List\ObjectListInterface>
+   * @var array<class-string<\Pinto\List\ObjectListInterface>>
    */
   public const Lists = [
     MixtapeAtoms::class,
