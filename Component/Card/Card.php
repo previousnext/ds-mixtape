@@ -30,7 +30,7 @@ class Card extends CommonComponent\Card\Card implements Utility\MixtapeObjectInt
       ->set('links', $this->links)
       ->set('modifiers', [])
       ->set('heading', $this->heading)
-      ->set('content', $this->content?->markup)
+      ->set('content', $this->content)
       ->set('link', $this->link)
       ->set('tags', $this->tags->count() > 0 ? $this->tags : NULL)
       ->set('date', $this->date?->format('j F Y'))

@@ -38,7 +38,17 @@
         tags: {  }
         max-age: -1
 '#tags': ~
-'#content': {  }
+'#content':
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        - {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#label': Publication
 '#info': '25 May 2025'
 '#infoPosition':
