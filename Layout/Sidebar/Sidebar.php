@@ -14,13 +14,19 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Slots\Attribute\RenameSlot(original: 'sidebar', new: 'sidebarContent')]
 #[Slots\Attribute\RenameSlot(original: 'sidebarPosition', new: 'before')]
+#[Slots\Attribute\ModifySlots(add: [
+  'order',
+])]
 #[Scenarios([CommonLayouts\Sidebar\SidebarScenarios::class])]
 class Sidebar extends CommonLayouts\Sidebar\Sidebar implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
 
   protected function build(Slots\Build $build): Slots\Build {
+    $order = $this->modifiers->getFirstInstanceOf(SidebarOrderModifier::class);
+
     return parent::build($build)
+      ->set('order', $order?->classPart())
       ->set('contentAttributes', $this->contentAttributes)
       ->set('sidebarAttributes', $this->sidebarAttributes);
   }
