@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PreviousNext\Ds\Common\Component\Card\Tests;
+namespace PreviousNext\Ds\Mixtape\Atom\Icon\Tests;
 
 use PHPUnit\Framework\TestCase;
 use PreviousNext\Ds\Common\Atom as CommonAtoms;

@@ -43,7 +43,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "PreviousNext\\Ds\\Mixtape\\": "."
+            "PreviousNext\\Ds\\Mixtape\\Atom\\": "Atom",
+            "PreviousNext\\Ds\\Mixtape\\Component\\": "Component",
+            "PreviousNext\\Ds\\Mixtape\\Layout\\": "Layout",
+            "PreviousNext\\Ds\\Mixtape\\List\\": "List",
+            "PreviousNext\\Ds\\Mixtape\\Utility\\": "Utility"
         }
     },
     "autoload-dev": {
