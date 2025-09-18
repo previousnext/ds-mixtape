@@ -29,6 +29,9 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
     foreach ($this->modifiers->getInstancesOf(SectionSize::class) as $sectionSize) {
       $modifiers[] = $sectionSize->modifierName();
     }
+    foreach ($this->modifiers->getInstancesOf(SectionWidth::class) as $sectionWidth) {
+      $modifiers[] = $sectionWidth->modifierName();
+    }
 
     $content = $this->map(static function (CommonLayouts\Section\SectionItem $item): mixed {
       return \is_callable($item->content) ? ($item->content)() : $item->content;

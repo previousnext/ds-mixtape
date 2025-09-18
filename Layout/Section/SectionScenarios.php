@@ -38,4 +38,16 @@ final class SectionScenarios {
     }
   }
 
+  final public static function sectionWidth(): \Generator {
+    foreach (SectionWidth::cases() as $sectionWidth) {
+      $instance = Layout\Section\Section::create(
+        heading: 'Section title',
+        as: Layout\Section\SectionType::Section,
+      );
+      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
+      $instance->modifiers[] = $sectionWidth;
+      yield $sectionWidth->name => $instance;
+    }
+  }
+
 }
