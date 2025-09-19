@@ -9,7 +9,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-AccordionItem
         '#title': Foo
-        '#content': 'Foo Content'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#open': true
         '#id': ~
         '#cache':
@@ -22,7 +32,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-AccordionItem
         '#title': Bar
-        '#content': 'Bar Content'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#open': true
         '#id': ~
         '#cache':
@@ -35,7 +55,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-AccordionItem
         '#title': Baz
-        '#content': 'Baz Content'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#open': true
         '#id': ~
         '#cache':
