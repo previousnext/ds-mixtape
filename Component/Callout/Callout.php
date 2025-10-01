@@ -10,9 +10,6 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-/**
- * @see LINK_TO_MIXTAPE_DOCS @todo
- */
 #[Css('callout.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
