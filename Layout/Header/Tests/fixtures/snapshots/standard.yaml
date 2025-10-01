@@ -51,6 +51,10 @@
         max-age: -1
 '#controls': {  }
 '#stacked': false
+'#attributes':
+    hello: {  }
+    class:
+        - foo
 '#cache':
     contexts: {  }
     tags: {  }

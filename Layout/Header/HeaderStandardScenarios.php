@@ -9,6 +9,7 @@ use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Common\Component as CommonComponents;
 use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Common\Vo\MenuTree\MenuTree;
+use PreviousNext\Ds\Mixtape\Atom;
 use PreviousNext\Ds\Mixtape\Component\Navigation\NavigationType;
 use PreviousNext\IdsTools\Scenario\Scenario;
 
@@ -34,6 +35,9 @@ final class HeaderStandardScenarios {
       menu: $menu,
     );
     $header->navigationType = NavigationType::Dropdown;
+
+    $header->containerAttributes['hello'] = 'world';
+    $header->containerAttributes['class'][] = 'foo';
 
     return $header;
   }
@@ -100,7 +104,8 @@ final class HeaderStandardScenarios {
     $menu[] = MenuTree::create(CommonAtoms\Link\Link::create('Link B', $url));
     $menu[] = MenuTree::create(CommonAtoms\Link\Link::create('Link C', $url));
 
-    $icon = CommonAtoms\Icon\Icon::create('chevron-down');
+    $icon = CommonAtoms\Icon\Icon::create();
+    $icon->modifiers[] = Atom\Icon\Icons::ChevronDown;
 
     /** @var Header $header */
     $header = CommonLayouts\Header\Header::create(

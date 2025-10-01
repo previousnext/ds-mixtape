@@ -70,7 +70,8 @@
             '#text': ~
             '#alignmentType': ~
             '#attributes': {  }
-            '#modifiers': {  }
+            '#modifiers':
+                - chevron-down
             '#cache':
                 contexts: {  }
                 tags: {  }
@@ -81,6 +82,7 @@
             tags: {  }
             max-age: -1
 '#stacked': false
+'#attributes': {  }
 '#cache':
     contexts: {  }
     tags: {  }

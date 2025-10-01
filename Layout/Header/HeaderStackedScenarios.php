@@ -9,6 +9,7 @@ use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Common\Component as CommonComponents;
 use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Common\Vo\MenuTree\MenuTree;
+use PreviousNext\Ds\Mixtape;
 use PreviousNext\IdsTools\Scenario\Scenario;
 
 final class HeaderStackedScenarios {
@@ -34,7 +35,8 @@ final class HeaderStackedScenarios {
     // Level 3.
     $treeA1[] = MenuTree::create(CommonAtoms\Link\Link::create('Link A1a', $url));
 
-    $icon = CommonAtoms\Icon\Icon::create('chevron-down');
+    $icon = CommonAtoms\Icon\Icon::create('');
+    $icon->modifiers[] = Mixtape\Atom\Icon\Icons::ChevronDown;
 
     /** @var Header $header */
     $header = CommonLayouts\Header\Header::create(

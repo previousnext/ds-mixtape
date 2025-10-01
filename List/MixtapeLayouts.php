@@ -17,13 +17,13 @@ enum MixtapeLayouts implements ObjectListInterface {
 
   use MixtapeListTrait;
 
-  #[Definition(Layout\Grid\Grid::class)]
-  case Grid;
-
   #[Definition(Layout\Footer\Footer::class)]
   #[DependencyOn(MixtapeLayouts::Page)]
   #[DependencyOn(MixtapeComponents::Navigation)]
   case Footer;
+
+  #[Definition(Layout\Grid\Grid::class)]
+  case Grid;
 
   #[Definition(Layout\Grid\GridItem\GridItem::class)]
   case GridItem;

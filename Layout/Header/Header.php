@@ -17,6 +17,7 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 #[Css('header.css', preprocess: TRUE)]
 #[Slots\Attribute\ModifySlots(add: [
   new Slots\Slot('stacked'),
+  new Slots\Slot('attributes'),
 ])]
 #[Scenarios([
   HeaderStackedScenarios::class,
@@ -48,6 +49,7 @@ class Header extends CommonLayouts\Header\Header implements Utility\MixtapeObjec
       ->set(HeaderSlots::search, $this->hasSearch ? CommonComponent\SearchForm\SearchForm::create('/search-for-common') : NULL)
       ->set(HeaderSlots::navigation, $navigation)
       ->set(HeaderSlots::controls, $this->controls->map(static fn (CommonAtoms\Button\Button $button): mixed => $button())->toArray())
+      ->set('attributes', $this->containerAttributes)
       ->set('stacked', $headerLayout === HeaderLayout::Stacked);
   }
 
