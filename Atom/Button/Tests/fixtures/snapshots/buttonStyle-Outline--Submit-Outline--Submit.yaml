@@ -2,14 +2,15 @@
 '#attached':
     library:
         - pinto/3b90f10624-MixtapeAtoms-Button
-'#title': 'Button button'
+'#title': 'Submit in style Outline'
 '#href': ~
-'#as': button
+'#as': submit
 '#disabled': false
 '#iconOnly': false
 '#iconStart': ~
 '#iconEnd': ~
-'#modifiers': {  }
+'#modifiers':
+    - outline
 '#cache':
     contexts: {  }
     tags: {  }

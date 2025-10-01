@@ -2,9 +2,9 @@
 '#attached':
     library:
         - pinto/3b90f10624-MixtapeAtoms-Button
-'#title': 'Button button'
+'#title': 'Submit button'
 '#href': ~
-'#as': button
+'#as': submit
 '#disabled': false
 '#iconOnly': false
 '#iconStart': ~

@@ -24,7 +24,7 @@ class Button extends CommonAtom\Button\Button implements Utility\MixtapeObjectIn
     $as = \strtolower(match ($this->as) {
       // Define all cases so we are notified by PHPStan if a new one is added
       // upstream.
-      ButtonType::Button, ButtonType::Input, ButtonType::Link, ButtonType::Submit => $this->as->name,
+      ButtonType::Button, ButtonType::Input, ButtonType::Link, ButtonType::Reset, ButtonType::Submit => $this->as->name,
     });
 
     $modifiers = [];

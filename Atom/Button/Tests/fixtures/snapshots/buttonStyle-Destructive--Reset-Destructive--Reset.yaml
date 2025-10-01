@@ -2,14 +2,15 @@
 '#attached':
     library:
         - pinto/3b90f10624-MixtapeAtoms-Button
-'#title': 'Button button'
+'#title': 'Reset in style Destructive'
 '#href': ~
-'#as': button
+'#as': reset
 '#disabled': false
 '#iconOnly': false
 '#iconStart': ~
 '#iconEnd': ~
-'#modifiers': {  }
+'#modifiers':
+    - destructive
 '#cache':
     contexts: {  }
     tags: {  }

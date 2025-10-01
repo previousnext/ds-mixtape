@@ -2,14 +2,15 @@
 '#attached':
     library:
         - pinto/3b90f10624-MixtapeAtoms-Button
-'#title': 'Button button'
+'#title': 'Input in style White'
 '#href': ~
-'#as': button
+'#as': input
 '#disabled': false
 '#iconOnly': false
 '#iconStart': ~
 '#iconEnd': ~
-'#modifiers': {  }
+'#modifiers':
+    - white
 '#cache':
     contexts: {  }
     tags: {  }
