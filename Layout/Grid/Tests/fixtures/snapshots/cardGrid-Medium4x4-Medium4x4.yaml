@@ -57,6 +57,7 @@
                                 tags: {  }
                                 max-age: -1
                     '#modifier': ~
+                    '#containerAttributes': {  }
                     '#cache':
                         contexts: {  }
                         tags: {  }
@@ -161,6 +162,7 @@
                                 tags: {  }
                                 max-age: -1
                     '#modifier': ~
+                    '#containerAttributes': {  }
                     '#cache':
                         contexts: {  }
                         tags: {  }
@@ -265,6 +267,7 @@
                                 tags: {  }
                                 max-age: -1
                     '#modifier': ~
+                    '#containerAttributes': {  }
                     '#cache':
                         contexts: {  }
                         tags: {  }
@@ -369,6 +372,7 @@
                                 tags: {  }
                                 max-age: -1
                     '#modifier': ~
+                    '#containerAttributes': {  }
                     '#cache':
                         contexts: {  }
                         tags: {  }
