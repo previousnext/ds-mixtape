@@ -22,7 +22,8 @@
         checked: false
         label: 'Tag 2'
 '#containerAttributes': {  }
-'#tagType': checkbox
+'#type': checkbox
+'#__twigTypeVar': checkbox
 '#attributes': {  }
 '#cache':
     contexts: {  }
