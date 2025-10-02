@@ -11,6 +11,7 @@
 '#iconEnd': ~
 '#modifiers':
     - dark
+'#containerAttributes': {  }
 '#cache':
     contexts: {  }
     tags: {  }

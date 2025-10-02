@@ -34,6 +34,7 @@
             max-age: -1
     '#iconEnd': ~
     '#modifiers': {  }
+    '#containerAttributes': {  }
     '#cache':
         contexts: {  }
         tags: {  }

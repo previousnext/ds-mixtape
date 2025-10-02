@@ -77,6 +77,7 @@
                 tags: {  }
                 max-age: -1
         '#modifiers': {  }
+        '#containerAttributes': {  }
         '#cache':
             contexts: {  }
             tags: {  }

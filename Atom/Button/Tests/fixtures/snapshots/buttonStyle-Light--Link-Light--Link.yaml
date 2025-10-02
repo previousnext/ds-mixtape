@@ -11,6 +11,7 @@
 '#iconEnd': ~
 '#modifiers':
     - light
+'#containerAttributes': {  }
 '#cache':
     contexts: {  }
     tags: {  }
