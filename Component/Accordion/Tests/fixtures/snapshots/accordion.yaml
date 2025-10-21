@@ -72,7 +72,18 @@
             contexts: {  }
             tags: {  }
             max-age: -1
-'#title': Title!
+'#title':
+    '#theme': c2e75f8655-CommonAtoms-Heading
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Heading
+    '#heading': Title!
+    '#level': h2
+    '#attributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#toggleAll': ~
 '#modifier': ~
 '#containerAttributes':
