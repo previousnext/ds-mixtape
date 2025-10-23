@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Component\InPageAlert;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -23,7 +24,7 @@ class InPageAlert extends CommonComponent\InPageAlert\InPageAlert implements Uti
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
       ->set('heading', $this->heading)
-      ->set('content', $this->content)
+      ->set('content', Html::createFromCollection($this))
       ->set('link', $this->link)
       ->set('type', \strtolower($this->type->name))
       ->set('closable', TRUE);
