@@ -23,9 +23,12 @@ use PreviousNext\Ds\Mixtape\Atom\Icon\IconSize;
 use PreviousNext\Ds\Mixtape\Layout\Header\HeaderLayout;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
+use Ramsey\Collection\AbstractCollection;
 
 /**
  * A standard template that sits inside <body>.
+ *
+ * @extends AbstractCollection<mixed>
  */
 #[ObjectType\Slots(slots: [
   'masthead',
@@ -36,7 +39,7 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 ])]
 #[Asset\Css('page.css', preprocess: TRUE)]
 #[Scenarios([PageScenarios::class])]
-class Page implements Utility\MixtapeObjectInterface {
+class Page extends AbstractCollection implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
   use CommonUtility\ObjectTrait;
@@ -46,9 +49,14 @@ class Page implements Utility\MixtapeObjectInterface {
   */
   final private function __construct(
     public array $title,
-    public mixed $content,
+    mixed $content,
     public Attribute $containerAttributes,
   ) {
+    if ($content !== NULL) {
+      parent::__construct(
+        data: \is_iterable($content) ? \iterator_to_array($content) : [$content],
+      );
+    }
   }
 
   /**
@@ -56,13 +64,17 @@ class Page implements Utility\MixtapeObjectInterface {
    */
   public static function create(
     array $title,
-    mixed $content,
+    mixed $content = NULL,
   ): static {
     return new static(
       title: $title,
       content: $content,
       containerAttributes: new Attribute(),
     );
+  }
+
+  public function getType(): string {
+    return 'mixed';
   }
 
   protected function build(Slots\Build $build): Slots\Build {
@@ -107,7 +119,7 @@ class Page implements Utility\MixtapeObjectInterface {
     $header->modifiers[] = HeaderLayout::Stacked;
 
     return $build
-      ->set('main', [$this->content])
+      ->set('main', [Html::createFromCollection($this)()])
       ->set('masthead', (CommonLayouts\Masthead\Masthead::create(
         content: Html::create(Markup::create('A PreviousNext Product')),
         links: [CommonAtoms\Link\Link::create('Link 1', $url)],

@@ -188,7 +188,35 @@
             library:
                 - pinto/c2e75f8655-CommonAtoms-Html
         '#items':
-            - 'Foo Bar'
+            -
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    - {  }
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            -
+                '#theme': 3b90f10624-MixtapeAtoms-Button
+                '#attached':
+                    library:
+                        - pinto/3b90f10624-MixtapeAtoms-Button
+                '#title': 'Item 2'
+                '#href': ~
+                '#as': link
+                '#disabled': false
+                '#iconOnly': false
+                '#iconStart': ~
+                '#iconEnd': ~
+                '#modifiers': {  }
+                '#containerAttributes': {  }
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
         '#cache':
             contexts: {  }
             tags: {  }
@@ -426,7 +454,6 @@
         tags: {  }
         max-age: -1
 '#attributes':
-    foo: {  }
     fixme: {  }
 '#cache':
     contexts: {  }
