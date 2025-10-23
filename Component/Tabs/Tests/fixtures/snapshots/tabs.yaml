@@ -23,7 +23,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-TabItem
         '#title': 'Tab 1'
-        '#content': 'Tab 1 contents!'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - 'Tab 1 contents!'
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#id': id
         '#active': false
         '#attributes': {  }
@@ -37,7 +47,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-TabItem
         '#title': 'Tab 2'
-        '#content': 'Tab 2 contents!'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - 'Tab 2 contents!'
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#id': id--2
         '#active': true
         '#attributes': {  }
@@ -51,7 +71,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-TabItem
         '#title': 'Tab 3'
-        '#content': 'Tab 3 contents!'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - 'Tab 3 contents!'
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#id': id--3
         '#active': false
         '#attributes': {  }
@@ -65,7 +95,17 @@
             library:
                 - pinto/b6a98ae948-MixtapeComponents-TabItem
         '#title': 'Tab 4'
-        '#content': 'Tab 4 contents!'
+        '#content':
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - 'Tab 4 contents!'
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
         '#id': id--4
         '#active': false
         '#attributes': {  }

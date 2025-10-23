@@ -21,14 +21,14 @@ class Tabs extends CommonComponent\Tabs\Tabs implements Utility\MixtapeObjectInt
 
   protected function build(Slots\Build $build): Slots\Build {
     // If nothing was delegated as active by now, set first to active.
-    if ($this->active === NULL) {
+    if ($this->active === NULL && $this->count() !== 0) {
       $this->active = $this->first();
     }
 
     /** @var array<TabItem> $tabs */
     $tabs = $this->map(function (Tab $item): mixed {
       /** @var \PreviousNext\Ds\Mixtape\Component\Tabs\TabsItem\TabsItem $tabItem */
-      $tabItem = TabItem::create((string) $item->id, $item->title, $item->content);
+      $tabItem = TabItem::create((string) $item->id, $item->title, $item);
       // Mixtape sets active on the TabItem, not TabListItem.
       $tabItem->active = $this->active === $item;
       return $tabItem();
