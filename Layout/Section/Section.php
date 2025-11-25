@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Layout\Section;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -33,14 +34,12 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
       $modifiers[] = $sectionWidth->modifierName();
     }
 
-    $content = $this->map(static function (CommonLayouts\Section\SectionItem $item): mixed {
-      return \is_callable($item->content) ? ($item->content)() : $item->content;
-    })->toArray();
-
     return parent::build($build)
       ->set('background', $sectionBackground?->modifierName())
       ->set('isContainer', $this->isContainer)
-      ->set('content', $content)
+      ->set('content', Html::createFromCollection($this->map(static function (CommonLayouts\Section\SectionItem $item): mixed {
+        return \is_callable($item->content) ? ($item->content)() : $item->content;
+      })))
       ->set('link', $this->link)
       ->set('heading', $this->heading)
       ->set('modifiers', $modifiers)

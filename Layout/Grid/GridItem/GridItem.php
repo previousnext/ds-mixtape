@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace PreviousNext\Ds\Mixtape\Layout\Grid\GridItem;
 
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Layout as CommonLayout;
 use PreviousNext\Ds\Mixtape\Utility;
 
@@ -21,6 +22,7 @@ class GridItem extends CommonLayout\Grid\GridItem\GridItem implements Utility\Mi
     }
 
     return parent::build($build)
+      ->set('content', Html::createFromCollection($this))
       ->set('modifiers', $modifiers)
       ->set('as', $this->as->element());
   }

@@ -18,28 +18,37 @@
         tags: {  }
         max-age: -1
 '#content':
-    -
-        '#theme': c2e75f8655-CommonAtoms-Html
-        '#attached':
-            library:
-                - pinto/c2e75f8655-CommonAtoms-Html
-        '#items':
-            - {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
-    -
-        '#theme': c2e75f8655-CommonAtoms-Html
-        '#attached':
-            library:
-                - pinto/c2e75f8655-CommonAtoms-Html
-        '#items':
-            - {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        -
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': c2e75f8655-CommonAtoms-Html
+            '#attached':
+                library:
+                    - pinto/c2e75f8655-CommonAtoms-Html
+            '#items':
+                - {  }
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#link':
     '#theme': 3b90f10624-MixtapeAtoms-Link
     '#attached':
