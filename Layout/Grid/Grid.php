@@ -29,8 +29,8 @@ class Grid extends CommonLayout\Grid\Grid implements Utility\MixtapeObjectInterf
       ->set('as', $this->as->element())
       // Mixtape `modifiers` may only contain values from
       // GridColumnSizeModifier::classPart().
-      ->set('modifiers', $this->modifiers->getInstancesOf(GridColumnSizeModifier::class)->map(
-        static fn (GridColumnSizeModifier $modifier): string => $modifier->classPart(),
+      ->set('modifiers', $this->modifiers->getInstancesOf(GridColumnSizeModifierInterface::class)->map(
+        static fn (GridColumnSizeModifierInterface $modifier): string => $modifier->classPart(),
       ));
   }
 

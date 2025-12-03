@@ -21,14 +21,20 @@ final class GridScenarios {
     $url->expects('toString')->andReturn('http://example.com/');
 
     foreach ([
-       [GridColumnSizeModifier::ExtraLarge2, 2],
-       [GridColumnSizeModifier::Large3, 3],
-       [GridColumnSizeModifier::Medium4, 4],
-       [GridColumnSizeModifier::Medium3, 3],
-       [GridColumnSizeModifier::Medium3, 6],
+       [GridColumnSizeModifierExtraLarge::ExtraLarge2, 2],
+       [GridColumnSizeModifierExtraLarge::ExtraLarge3, 3],
+       [GridColumnSizeModifierExtraLarge::ExtraLarge4, 4],
+       [GridColumnSizeModifierExtraSmall::ExtraSmall2, 2],
+       [GridColumnSizeModifierLarge::Large2, 2],
+       [GridColumnSizeModifierLarge::Large3, 3],
+       [GridColumnSizeModifierLarge::Large4, 4],
+       [GridColumnSizeModifierMedium::Medium2, 2],
+       [GridColumnSizeModifierMedium::Medium3, 3],
+       [GridColumnSizeModifierMedium::Medium4, 4],
+       [GridColumnSizeModifierSmall::Small2, 2],
     ] as [$gridColumnSizeModifier, $cardQuantity]) {
       $instance = Grid::create(as:GridType::Div, gridItemDefaultType: GridItem\GridItemType::Div);
-      $instance->modifiers[] = GridColumnSizeModifier::Medium3;
+      $instance->modifiers[] = $gridColumnSizeModifier;
 
       for ($i = 0; $i < $cardQuantity; $i++) {
         $instance[] = Component\Card\Card::create(

@@ -232,7 +232,7 @@
             tags: {  }
             max-age: -1
 '#modifiers':
-    - xl-2
+    - lg-2
 '#as': div
 '#attributes': {  }
 '#cache':
