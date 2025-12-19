@@ -9,6 +9,7 @@ use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Mixtape\Atom;
 use PreviousNext\Ds\Mixtape\Atom\Icon\Icon;
 use PreviousNext\IdsTools\DependencyInjection\IdsContainer;
+use PreviousNext\IdsTools\Rendering\ComponentRender;
 
 class IconTest extends TestCase {
 
@@ -25,11 +26,11 @@ class IconTest extends TestCase {
     static::assertInstanceOf(Icon::class, $icon);
 
     $icon = Icon::createMixtapeIcon(Atom\Icon\Icons::Drupal, Atom\Icon\IconSize::ExtraLarge);
-    $build = $icon();
-    static::assertEquals('drupal', $build['#icon']);
+    $rendered = ComponentRender::renderViaGlobal($icon);
+    static::assertEquals('drupal', $rendered['#icon']);
     // Ensure the icon didn't end up as another class in the attributes object, and only the size did:
     // @phpstan-ignore-next-line
-    static::assertEquals(' class="mx-icon--size-xl"', (string) $build['#attributes']);
+    static::assertEquals(' class="mx-icon--size-xl"', (string) $rendered['#attributes']);
   }
 
 }

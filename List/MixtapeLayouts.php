@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
+use Drupal\pinto\Resource\DrupalLibraryInterface;
 use Pinto\Attribute\Asset\Css;
 use Pinto\Attribute\Definition;
 use Pinto\Attribute\DependencyOn;
@@ -13,7 +14,7 @@ use PreviousNext\Ds\Mixtape\Layout;
 
 #[CanonicalProduct]
 #[DependencyOn(MixtapeGlobal::Global)]
-enum MixtapeLayouts implements ObjectListInterface {
+enum MixtapeLayouts implements ObjectListInterface, DrupalLibraryInterface {
 
   use MixtapeListTrait;
 
