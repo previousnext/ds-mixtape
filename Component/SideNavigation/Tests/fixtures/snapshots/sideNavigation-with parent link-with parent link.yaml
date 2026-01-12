@@ -25,7 +25,7 @@
     '#href': 'http://example.com/'
     '#more': false
     '#external': false
-    '#current': true
+    '#current': false
     '#download': false
     '#iconStart': ~
     '#iconEnd': ~
