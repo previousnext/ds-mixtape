@@ -44,6 +44,7 @@ enum MixtapeComponents implements ObjectListInterface, DrupalLibraryInterface {
   case InPageAlert;
 
   #[Definition(Component\InPageNavigation\InPageNavigation::class)]
+  #[DependencyOn(self::Navigation)]
   case InPageNavigation;
 
   #[Definition(Component\LinkList\LinkList::class)]
