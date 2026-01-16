@@ -1,0 +1,28 @@
+'#theme': b6a98ae948-MixtapeComponents-UtilityList
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-UtilityList
+'#horizontal': true
+'#copy': true
+'#print': true
+'#pdf': true
+'#attributes': {  }
+'#share':
+    '#theme': b6a98ae948-MixtapeComponents-SocialShare
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-SocialShare
+    '#attributes': {  }
+    '#facebook': 'http://example.com/'
+    '#linkedin': 'http://example.com/'
+    '#twitter': 'http://example.com/'
+    '#bluesky': 'http://example.com/'
+    '#email': 'mailto:john@example.com'
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

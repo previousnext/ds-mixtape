@@ -95,6 +95,10 @@ enum MixtapeComponents implements ObjectListInterface, DrupalLibraryInterface {
   #[Definition(Component\Tags\Tags::class)]
   case Tags;
 
+  #[Definition(Component\UtilityList\UtilityList::class)]
+  #[DependencyOn(self::Navigation)]
+  case UtilityList;
+
   private function dsDirectory(): string {
     if ($this === MixtapeComponents::Tags) {
       return 'Component/Tag';
