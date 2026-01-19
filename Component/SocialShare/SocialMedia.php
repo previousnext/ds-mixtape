@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\Component\SocialShare;
 
+use Drupal\Core\Url;
 use PreviousNext\Ds\Common\Component\SocialShare\SocialShareSocialMediaInterface;
 
 enum SocialMedia implements SocialShareSocialMediaInterface {
@@ -13,5 +14,15 @@ enum SocialMedia implements SocialShareSocialMediaInterface {
   case Twitter;
   case Bluesky;
   case Email;
+
+  public function defaultUrl(): Url {
+    return match ($this) {
+      static::Facebook => Url::fromUri(\sprintf('https://www.facebook.com/sharer/sharer.php?u=%s', Url::fromUri('<current>')->toString())),
+      static::LinkedIn => Url::fromUri(\sprintf('https://www.linkedin.com/sharing/share-offsite/?url=%s', Url::fromUri('<current>')->toString())),
+      static::Twitter => Url::fromUri(\sprintf('https://twitter.com/intent/tweet?url=%s', Url::fromUri('<current>')->toString())),
+      static::Bluesky => Url::fromUri(\sprintf('https://bsky.app/intent/compose?text=%s', Url::fromUri('<current>')->toString())),
+      static::Email => Url::fromUri(\sprintf('mailto:?subject=&body=%s', Url::fromUri('<current>')->toString())),
+    };
+  }
 
 }
