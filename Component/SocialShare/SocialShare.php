@@ -9,7 +9,13 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Slots\Attribute\ModifySlots(add: [SocialMedia::class])]
+#[Slots\Attribute\ModifySlots(add: [
+  new Slots\Slot(SocialMedia::Facebook, defaultValue: NULL),
+  new Slots\Slot(SocialMedia::LinkedIn, defaultValue: NULL),
+  new Slots\Slot(SocialMedia::Twitter, defaultValue: NULL),
+  new Slots\Slot(SocialMedia::Bluesky, defaultValue: NULL),
+  new Slots\Slot(SocialMedia::Email, defaultValue: NULL),
+])]
 #[Slots\Attribute\RenameSlot(original: SocialMedia::Facebook, new: 'facebook')]
 #[Slots\Attribute\RenameSlot(original: SocialMedia::LinkedIn, new: 'linkedin')]
 #[Slots\Attribute\RenameSlot(original: SocialMedia::Twitter, new: 'twitter')]
