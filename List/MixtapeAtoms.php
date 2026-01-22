@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
-use Drupal\pinto\Resource\DrupalLibraryInterface;
 use Pinto\Attribute\Definition;
 use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
@@ -13,7 +12,7 @@ use PreviousNext\Ds\Mixtape\Atom;
 
 #[CanonicalProduct]
 #[DependencyOn(MixtapeGlobal::Global)]
-enum MixtapeAtoms implements ObjectListInterface, DrupalLibraryInterface {
+enum MixtapeAtoms implements ObjectListInterface {
 
   use MixtapeListTrait;
 

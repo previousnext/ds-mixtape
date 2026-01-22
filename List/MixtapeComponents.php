@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
-use Drupal\pinto\Resource\DrupalLibraryInterface;
 use Pinto\Attribute\Definition;
 use Pinto\Attribute\DependencyOn;
 use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
@@ -15,7 +14,7 @@ use PreviousNext\Ds\Mixtape\Component;
 
 #[CanonicalProduct]
 #[DependencyOn(MixtapeGlobal::Global)]
-enum MixtapeComponents implements ObjectListInterface, DrupalLibraryInterface {
+enum MixtapeComponents implements ObjectListInterface {
 
   use MixtapeListTrait {
     MixtapeListTrait::dsDirectory as public originalDsDirectory;

@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\List;
 
-use Drupal\pinto\Resource\DrupalLibraryInterface;
 use Pinto\Attribute\Asset\Css;
 use Pinto\List\ObjectListInterface;
 
-enum MixtapeGlobal implements ObjectListInterface, DrupalLibraryInterface {
+enum MixtapeGlobal implements ObjectListInterface {
 
   use MixtapeListTrait;
 
