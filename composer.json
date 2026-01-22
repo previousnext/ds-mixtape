@@ -1,7 +1,6 @@
 {
     "name": "previousnext/ds-mixtape",
     "type": "library",
-    "version": "0.0.1",
     "minimum-stability": "beta",
     "require": {
         "php": ">=8.2",
