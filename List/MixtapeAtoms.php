@@ -19,6 +19,9 @@ enum MixtapeAtoms implements ObjectListInterface {
   #[Definition(Atom\Button\Button::class)]
   case Button;
 
+  #[Definition(Atom\Heading\Heading::class)]
+  case Heading;
+
   #[Definition(Atom\Icon\Icon::class)]
   case Icon;
 

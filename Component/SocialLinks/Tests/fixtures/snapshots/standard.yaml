@@ -3,13 +3,14 @@
     library:
         - pinto/b6a98ae948-MixtapeComponents-SocialLinks
 '#title':
-    '#theme': c2e75f8655-CommonAtoms-Heading
+    '#theme': 3b90f10624-MixtapeAtoms-Heading
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Heading
-    '#heading': Title!
-    '#level': h2
+            - pinto/3b90f10624-MixtapeAtoms-Heading
+    '#title': Title!
+    '#as': h2
     '#attributes': {  }
+    '#modifiers': {  }
     '#cache':
         contexts: {  }
         tags: {  }

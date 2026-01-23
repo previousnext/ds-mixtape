@@ -1,0 +1,15 @@
+'#theme': 3b90f10624-MixtapeAtoms-Heading
+'#attached':
+    library:
+        - pinto/3b90f10624-MixtapeAtoms-Heading
+'#title': 'Heading text'
+'#as': h2
+'#attributes':
+    id: {  }
+    class:
+        - a-class
+'#modifiers': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

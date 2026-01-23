@@ -3,13 +3,14 @@
     library:
         - pinto/b6a98ae948-MixtapeComponents-HeroBanner
 '#title':
-    '#theme': c2e75f8655-CommonAtoms-Heading
+    '#theme': 3b90f10624-MixtapeAtoms-Heading
     '#attached':
         library:
-            - pinto/c2e75f8655-CommonAtoms-Heading
-    '#heading': 'Hero Link List Title!'
-    '#level': h1
+            - pinto/3b90f10624-MixtapeAtoms-Heading
+    '#title': 'Hero Link List Title!'
+    '#as': h1
     '#attributes': {  }
+    '#modifiers': {  }
     '#cache':
         contexts: {  }
         tags: {  }
