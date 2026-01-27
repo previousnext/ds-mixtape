@@ -33,13 +33,26 @@
     '#attached':
         library:
             - pinto/b6a98ae948-MixtapeComponents-LinkList
+    '#title':
+        '#theme': 3b90f10624-MixtapeAtoms-Heading
+        '#attached':
+            library:
+                - pinto/3b90f10624-MixtapeAtoms-Heading
+        '#title': 'Hero Link List Title!'
+        '#as': h2
+        '#attributes': {  }
+        '#modifiers': {  }
+        '#cache':
+            contexts: {  }
+            tags: {  }
+            max-age: -1
     '#items':
         -
             '#theme': 3b90f10624-MixtapeAtoms-Link
             '#attached':
                 library:
                     - pinto/3b90f10624-MixtapeAtoms-Link
-            '#title': 'A link'
+            '#title': 'First link'
             '#href': 'http://example.com/'
             '#more': false
             '#external': false
@@ -57,7 +70,7 @@
             '#attached':
                 library:
                     - pinto/3b90f10624-MixtapeAtoms-Link
-            '#title': 'Front page!'
+            '#title': 'Second link'
             '#href': 'http://example.com/'
             '#more': false
             '#external': false
@@ -75,7 +88,7 @@
             '#attached':
                 library:
                     - pinto/3b90f10624-MixtapeAtoms-Link
-            '#title': 'Hero Link List item 2!'
+            '#title': 'Third link'
             '#href': 'http://example.com/'
             '#more': false
             '#external': false

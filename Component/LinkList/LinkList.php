@@ -20,7 +20,8 @@ class LinkList extends CommonComponent\LinkList\LinkList implements Utility\Mixt
     return parent::build($build)
       ->set('items', \array_map(static function (Atom\Link\Link $link) {
         return $link();
-      }, $this->toArray()));
+      }, $this->toArray()))
+      ->set('title', $this->title);
   }
 
 }

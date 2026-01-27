@@ -33,9 +33,15 @@ final class HeroBannerScenarios {
       'Hero Link List Title!',
       'Hero Link List Subtitle!',
       link: CommonAtom\Link\Link::create('Hero Banner Link!', $url),
+      links: CommonComponent\LinkList\LinkList::create(
+        links: [
+          CommonAtom\Link\Link::create('Front page!', $url),
+          CommonAtom\Link\Link::create('Hero Link List item 2!', $url),
+        ],
+        title: CommonAtom\Heading\Heading::create('Popular links', CommonAtom\Heading\HeadingLevel::Six),
+      ),
     );
-    // One at a time: #[Mutex]
-    // $instance->modifiers[] = HeroBannerBackground::OffWhite;.
+    // One at a time: #[Mutex].
     $instance->modifiers[] = HeroBannerBackground::Dark;
     return $instance;
   }

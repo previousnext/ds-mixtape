@@ -42,6 +42,7 @@
                         '#attached':
                             library:
                                 - pinto/b6a98ae948-MixtapeComponents-LinkList
+                        '#title': ~
                         '#items':
                             -
                                 '#theme': 3b90f10624-MixtapeAtoms-Link
@@ -156,6 +157,7 @@
                         '#attached':
                             library:
                                 - pinto/b6a98ae948-MixtapeComponents-LinkList
+                        '#title': ~
                         '#items':
                             -
                                 '#theme': 3b90f10624-MixtapeAtoms-Link
@@ -270,6 +272,7 @@
                         '#attached':
                             library:
                                 - pinto/b6a98ae948-MixtapeComponents-LinkList
+                        '#title': ~
                         '#items':
                             -
                                 '#theme': 3b90f10624-MixtapeAtoms-Link

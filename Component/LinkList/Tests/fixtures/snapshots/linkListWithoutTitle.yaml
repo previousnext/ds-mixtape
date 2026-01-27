@@ -2,19 +2,7 @@
 '#attached':
     library:
         - pinto/b6a98ae948-MixtapeComponents-LinkList
-'#title':
-    '#theme': 3b90f10624-MixtapeAtoms-Heading
-    '#attached':
-        library:
-            - pinto/3b90f10624-MixtapeAtoms-Heading
-    '#title': 'Link List Title!'
-    '#as': h2
-    '#attributes': {  }
-    '#modifiers': {  }
-    '#cache':
-        contexts: {  }
-        tags: {  }
-        max-age: -1
+'#title': ~
 '#items':
     -
         '#theme': 3b90f10624-MixtapeAtoms-Link
