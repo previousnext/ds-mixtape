@@ -45,8 +45,8 @@ class Page extends AbstractCollection implements Utility\MixtapeObjectInterface 
   use CommonUtility\ObjectTrait;
 
   /**
-   * @phpstan-param array{'#markup': \Drupal\Component\Render\MarkupInterface|string} $title
-  */
+   * @phpstan-param array{"#markup": \Drupal\Component\Render\MarkupInterface|string} $title
+   */
   final private function __construct(
     public array $title,
     mixed $content,
@@ -60,13 +60,13 @@ class Page extends AbstractCollection implements Utility\MixtapeObjectInterface 
   }
 
   /**
-   * @phpstan-param array{'#markup': \Drupal\Component\Render\MarkupInterface|string} $title
+   * @phpstan-param array{"#markup": \Drupal\Component\Render\MarkupInterface|string} $title
    */
   public static function create(
     array $title,
     mixed $content = NULL,
   ): static {
-    return new static(
+    return static::factoryCreate(
       title: $title,
       content: $content,
       containerAttributes: new Attribute(),
