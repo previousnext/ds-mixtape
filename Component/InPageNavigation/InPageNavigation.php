@@ -25,6 +25,7 @@ class InPageNavigation extends CommonComponents\InPageNavigation\InPageNavigatio
 
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
+      ->set('heading', $this->heading->heading)
       ->set('includeElements', \iterator_to_array($this->modifiers->getInstancesOf(CommonComponents\InPageNavigation\InPageNavigationIncludeElementsInterface::class)->map(
         static fn (CommonComponents\InPageNavigation\InPageNavigationIncludeElementsInterface $includeElements): string => $includeElements->selector(),
       )));

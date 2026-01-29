@@ -2,19 +2,7 @@
 '#attached':
     library:
         - pinto/b6a98ae948-MixtapeComponents-InPageNavigation
-'#title':
-    '#theme': 3b90f10624-MixtapeAtoms-Heading
-    '#attached':
-        library:
-            - pinto/3b90f10624-MixtapeAtoms-Heading
-    '#title': Example!
-    '#as': h2
-    '#attributes': {  }
-    '#modifiers': {  }
-    '#cache':
-        contexts: {  }
-        tags: {  }
-        max-age: -1
+'#title': Example!
 '#levels':
     - h1
     - h2
