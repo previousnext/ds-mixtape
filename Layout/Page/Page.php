@@ -66,6 +66,7 @@ class Page extends AbstractCollection implements Utility\MixtapeObjectInterface 
     array $title,
     mixed $content = NULL,
   ): static {
+    /** @var static */
     return static::factoryCreate(
       title: $title,
       content: $content,
