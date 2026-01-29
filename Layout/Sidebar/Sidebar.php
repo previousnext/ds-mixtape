@@ -10,7 +10,7 @@ use PreviousNext\Ds\Common\Layout as CommonLayouts;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Css('sidebar.css', preprocess: TRUE)]
+#[Css('sidebar.css', preprocess: FALSE)]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Slots\Attribute\RenameSlot(original: 'sidebar', new: 'sidebarContent')]
 #[Slots\Attribute\RenameSlot(original: 'sidebarPosition', new: 'before')]

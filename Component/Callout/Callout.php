@@ -10,7 +10,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Css('callout.css', preprocess: TRUE)]
+#[Css('callout.css', preprocess: FALSE)]
 #[Slots\Attribute\RenameSlot(original: 'heading', new: 'title')]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Scenarios([CommonComponent\Callout\CalloutScenarios::class])]

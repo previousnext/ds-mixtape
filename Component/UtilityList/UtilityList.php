@@ -10,9 +10,9 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css(path: 'popover.css', preprocess: TRUE)]
-#[Asset\Css(path: 'utility-list.css', preprocess: TRUE)]
-#[Asset\Js('utility-list.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
+#[Asset\Css(path: 'popover.css', preprocess: FALSE)]
+#[Asset\Css(path: 'utility-list.css', preprocess: FALSE)]
+#[Asset\Js('utility-list.entry.js', preprocess: FALSE, attributes: ['type' => 'module'])]
 #[Slots\Attribute\RenameSlot(original: 'direction', new: 'horizontal')]
 #[Slots\Attribute\RenameSlot(original: 'hasCopy', new: 'copy')]
 #[Slots\Attribute\RenameSlot(original: 'hasPrint', new: 'print')]

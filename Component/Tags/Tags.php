@@ -15,7 +15,7 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
  * @template T of CommonComponent\Tags\Tag|CommonComponent\Tags\CheckboxTag|CommonComponent\Tags\LinkTag = CommonComponent\Tags\Tag|CommonComponent\Tags\CheckboxTag|CommonComponent\Tags\LinkTag
  * @extends CommonComponent\Tags\Tags<T>
  */
-#[Css('tag.css', preprocess: TRUE)]
+#[Css('tag.css', preprocess: FALSE)]
 #[Slots\Attribute\RenameSlot(original: 'tags', new: 'items')]
 #[Slots\Attribute\ModifySlots(add: [
   // Cant use 'type' directly as Drupal uses #type, which causes our object to be both a theme and a type. The '#type' is nulled then set in a preprocessor.

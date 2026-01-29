@@ -10,7 +10,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css('steps.css', preprocess: TRUE)]
+#[Asset\Css('steps.css', preprocess: FALSE)]
 #[Scenarios([
   CommonComponent\Steps\StepsScenarios::class,
   StepsScenarios::class,

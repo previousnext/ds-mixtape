@@ -12,8 +12,8 @@ use PreviousNext\Ds\Common\Component\Tabs\TabItem\TabItem;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css('tabs.css', preprocess: TRUE)]
-#[Asset\Js('tabs.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
+#[Asset\Css('tabs.css', preprocess: FALSE)]
+#[Asset\Js('tabs.entry.js', preprocess: FALSE, attributes: ['type' => 'module'])]
 #[Scenarios([CommonComponent\Tabs\TabsScenarios::class])]
 class Tabs extends CommonComponent\Tabs\Tabs implements Utility\MixtapeObjectInterface {
 

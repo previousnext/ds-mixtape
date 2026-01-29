@@ -10,9 +10,9 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css('navigation.css', preprocess: TRUE)]
-#[Asset\Js('navigation.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
-#[Asset\Js('drop-menu.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
+#[Asset\Css('navigation.css', preprocess: FALSE)]
+#[Asset\Js('navigation.entry.js', preprocess: FALSE, attributes: ['type' => 'module'])]
+#[Asset\Js('drop-menu.entry.js', preprocess: FALSE, attributes: ['type' => 'module'])]
 #[Slots\Attribute\RenameSlot(original: 'menuTrees', new: 'items')]
 #[Scenarios([CommonComponent\Navigation\NavigationScenarios::class])]
 #[Slots\Attribute\ModifySlots(add: [

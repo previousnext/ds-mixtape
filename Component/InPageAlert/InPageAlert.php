@@ -11,7 +11,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Css('in-page-alert.css', preprocess: TRUE)]
+#[Css('in-page-alert.css', preprocess: FALSE)]
 #[Slots\Attribute\ModifySlots(add: [
   // Unique to Mixtape:
   'closable',

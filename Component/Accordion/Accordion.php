@@ -10,8 +10,8 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css('accordion.css', preprocess: TRUE)]
-#[Asset\Js('accordion.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
+#[Asset\Css('accordion.css', preprocess: FALSE)]
+#[Asset\Js('accordion.entry.js', preprocess: FALSE, attributes: ['type' => 'module'])]
 #[Scenarios([CommonComponent\Accordion\AccordionScenarios::class])]
 class Accordion extends CommonComponent\Accordion\Accordion implements Utility\MixtapeObjectInterface {
 

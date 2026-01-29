@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace PreviousNext\Ds\Mixtape\List;
 
 use Pinto\Attribute\Asset\Css;
+use Pinto\CanonicalProduct\Attribute\CanonicalProduct;
 use Pinto\List\ObjectListInterface;
 
+#[CanonicalProduct]
 enum MixtapeGlobal implements ObjectListInterface {
 
   use MixtapeListTrait;
@@ -19,7 +21,7 @@ enum MixtapeGlobal implements ObjectListInterface {
   #[Css('utilities.css', preprocess: TRUE)]
   case Global;
 
-  #[Css('drop-menu.css', preprocess: TRUE)]
+  #[Css('drop-menu.css', preprocess: FALSE)]
   case DropMenu;
 
 }

@@ -9,7 +9,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css('social-links.css', preprocess: TRUE)]
+#[Asset\Css('social-links.css', preprocess: FALSE)]
 #[Scenarios([
   CommonComponent\SocialLinks\SocialLinksScenarios::class,
 ])]

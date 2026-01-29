@@ -11,7 +11,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Asset\Css('link-list.css', preprocess: TRUE)]
+#[Asset\Css('link-list.css', preprocess: FALSE)]
 #[Scenarios([CommonComponent\LinkList\LinkListScenarios::class])]
 class LinkList extends CommonComponent\LinkList\LinkList implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;

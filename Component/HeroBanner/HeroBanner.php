@@ -12,7 +12,7 @@ use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
-#[Css('hero-banner.css', preprocess: TRUE)]
+#[Css('hero-banner.css', preprocess: FALSE)]
 #[Slots\Attribute\RenameSlot(original: 'links', new: 'linkList')]
 #[Scenarios([
   CommonComponent\HeroBanner\HeroBannerScenarios::class,

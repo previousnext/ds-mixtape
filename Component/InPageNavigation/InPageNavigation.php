@@ -13,8 +13,8 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 /**
  * Searches areas with '.js-content' selector (see Twig).
  */
-#[Asset\Css('in-page-navigation.css', preprocess: TRUE)]
-#[Asset\Js('in-page-navigation.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
+#[Asset\Css('in-page-navigation.css', preprocess: FALSE)]
+#[Asset\Js('in-page-navigation.entry.js', preprocess: FALSE, attributes: ['type' => 'module'])]
 #[Scenarios([CommonComponents\InPageNavigation\InPageNavigationScenarios::class])]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Slots\Attribute\RenameSlot(original: 'includeElements', new: 'levels')]
