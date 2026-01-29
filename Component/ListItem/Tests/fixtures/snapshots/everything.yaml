@@ -71,7 +71,8 @@
     name: After
 '#modifiers': {  }
 '#attributes':
-    foo: {  }
+    foo:
+        value: bar
     class:
         - hello
 '#infoBefore': false

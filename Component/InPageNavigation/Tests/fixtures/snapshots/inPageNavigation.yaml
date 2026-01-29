@@ -8,7 +8,8 @@
     - h2
     - h3
 '#attributes':
-    hello: {  }
+    hello:
+        value: world
     class:
         - foo
 '#cache':

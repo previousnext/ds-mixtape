@@ -46,15 +46,18 @@
         max-age: -1
 '#before': true
 '#attributes':
-    hello: {  }
+    hello:
+        value: world
     class:
         - foo
 '#contentAttributes':
-    hello: {  }
+    hello:
+        value: content-world
     class:
         - content-foo
 '#sidebarAttributes':
-    hello: {  }
+    hello:
+        value: sidebar-world
     class:
         - sidebar-foo
 '#order': ~

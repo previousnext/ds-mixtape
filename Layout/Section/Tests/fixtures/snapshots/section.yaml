@@ -70,7 +70,8 @@
         max-age: -1
 '#modifiers': {  }
 '#attributes':
-    foo: {  }
+    foo:
+        value: bar
     class:
         - hello
         - world

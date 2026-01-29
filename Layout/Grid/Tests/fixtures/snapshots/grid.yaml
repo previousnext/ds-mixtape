@@ -67,7 +67,8 @@
         '#modifiers': {  }
         '#as': div
         '#attributes':
-            foo: {  }
+            foo:
+                value: gibar
             class:
                 - 'gi hello'
                 - 'gi world'

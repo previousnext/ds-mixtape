@@ -107,7 +107,8 @@
             tags: {  }
             max-age: -1
 '#attributes':
-    hello: {  }
+    hello:
+        value: world
     class:
         - foo
 '#cache':

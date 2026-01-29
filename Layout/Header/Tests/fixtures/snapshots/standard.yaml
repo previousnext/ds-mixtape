@@ -52,7 +52,8 @@
 '#controls': {  }
 '#stacked': false
 '#attributes':
-    hello: {  }
+    hello:
+        value: world
     class:
         - foo
 '#cache':

@@ -5,7 +5,8 @@
 '#title': 'Heading text'
 '#as': h2
 '#attributes':
-    id: {  }
+    id:
+        value: my-heading
     class:
         - a-class
 '#modifiers': {  }

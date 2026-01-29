@@ -88,7 +88,8 @@
 '#toggleAll': ~
 '#modifier': ~
 '#containerAttributes':
-    hello: {  }
+    hello:
+        value: world
     class:
         - foo
 '#cache':

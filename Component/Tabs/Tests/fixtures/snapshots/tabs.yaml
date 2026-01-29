@@ -115,7 +115,8 @@
             tags: {  }
             max-age: -1
 '#containerAttributes':
-    foo: {  }
+    foo:
+        value: bar
 '#cache':
     contexts: {  }
     tags: {  }

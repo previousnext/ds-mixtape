@@ -113,7 +113,8 @@
 '#modifiers':
     - dark
 '#containerAttributes':
-    foo: {  }
+    foo:
+        value: bar
 '#cache':
     contexts: {  }
     tags: {  }
