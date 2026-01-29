@@ -1,0 +1,65 @@
+'#theme': b6a98ae948-MixtapeComponents-HeroSearch
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-HeroSearch
+'#title':
+    '#theme': 3b90f10624-MixtapeAtoms-Heading
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Heading
+    '#title': Title!
+    '#as': h1
+    '#attributes': {  }
+    '#modifiers': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#content':
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#subtitle': Subtitle!
+'#image':
+    '#theme': 3b90f10624-MixtapeAtoms-Image
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Image
+    '#src': /800-600-ppb.jpg
+    '#alt': Sample
+    '#width': 800
+    '#height': 600
+    '#loading': eager
+    '#sources': {  }
+    '#imageAttributes': {  }
+    '#containerAttributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#linkList': ~
+'#search':
+    '#theme': b6a98ae948-MixtapeComponents-SearchForm
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-SearchForm
+    '#attributes': {  }
+    '#action': 'https://example.com/search'
+    '#id': id
+    '#name': q
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#modifiers': {  }
+'#attributes': {  }
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

@@ -39,6 +39,9 @@ enum MixtapeComponents implements ObjectListInterface {
   #[Definition(Component\HeroBanner\HeroBanner::class)]
   case HeroBanner;
 
+  #[Definition(Component\HeroSearch\HeroSearch::class)]
+  case HeroSearch;
+
   #[Definition(Component\InPageAlert\InPageAlert::class)]
   case InPageAlert;
 
