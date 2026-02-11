@@ -1,0 +1,28 @@
+'#theme': 3b90f10624-MixtapeAtoms-LinkedImage
+'#attached':
+    library:
+        - pinto/3b90f10624-MixtapeAtoms-LinkedImage
+'#image':
+    '#theme': 3b90f10624-MixtapeAtoms-Image
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Image
+    '#src': /512-340-ppb.jpg
+    '#alt': Sample
+    '#width': 512
+    '#height': 340
+    '#loading': eager
+    '#sources': {  }
+    '#imageAttributes': {  }
+    '#containerAttributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#href': 'http://example.com/'
+'#attributes': {  }
+'#title': 'Linked image text!'
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1

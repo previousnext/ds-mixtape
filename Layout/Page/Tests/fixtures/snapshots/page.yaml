@@ -73,6 +73,7 @@
                 max-age: -1
         '#href': 'http://example.com/'
         '#attributes': {  }
+        '#title': LinkedImageText!
         '#cache':
             contexts: {  }
             tags: {  }
@@ -189,6 +190,7 @@
                 max-age: -1
         '#href': 'http://example.com/'
         '#attributes': {  }
+        '#title': LinkedImageText!
         '#cache':
             contexts: {  }
             tags: {  }
