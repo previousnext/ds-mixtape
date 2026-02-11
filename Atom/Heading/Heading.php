@@ -40,6 +40,14 @@ class Heading extends CommonAtom\Heading\Heading implements Utility\MixtapeObjec
   protected function build(Slots\Build $build): Slots\Build {
     $modifiers = [];
 
+    if ($this->isExcluded) {
+      $this->containerAttributes->addClass('is-excluded');
+    }
+
+    if ($this->isVisuallyHidden) {
+      $this->containerAttributes->addClass('sr-only');
+    }
+
     if (NULL !== ($headingVisualSize = $this->modifiers->getFirstInstanceOf(HeadingVisualSize::class))) {
       $modifiers[] = $headingVisualSize->asModifier();
     }
