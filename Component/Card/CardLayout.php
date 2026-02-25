@@ -12,6 +12,7 @@ enum CardLayout implements CardModifierInterface {
 
   case Block;
   case Reversed;
+  case Collapsed;
 
   /**
    * Suffix for `mx-card--`.
@@ -20,6 +21,7 @@ enum CardLayout implements CardModifierInterface {
     return match ($this) {
       static::Block => 'block',
       static::Reversed => 'reversed',
+      static::Collapsed => 'collapse',
     };
   }
 

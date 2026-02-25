@@ -1,0 +1,70 @@
+'#theme': b6a98ae948-MixtapeComponents-Card
+'#attached':
+    library:
+        - pinto/b6a98ae948-MixtapeComponents-Card
+'#image':
+    '#theme': 3b90f10624-MixtapeAtoms-Image
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Image
+    '#src': /256-256-256px.jpg
+    '#alt': Sample
+    '#width': 256
+    '#height': 256
+    '#loading': eager
+    '#sources': {  }
+    '#imageAttributes': {  }
+    '#containerAttributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#icon': ~
+'#links':
+    '#theme': b6a98ae948-MixtapeComponents-LinkList
+    '#attached':
+        library:
+            - pinto/b6a98ae948-MixtapeComponents-LinkList
+    '#title': ~
+    '#items': {  }
+    '#modifier': ~
+    '#containerAttributes': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#date': ~
+'#tags': ~
+'#title':
+    '#theme': 3b90f10624-MixtapeAtoms-Heading
+    '#attached':
+        library:
+            - pinto/3b90f10624-MixtapeAtoms-Heading
+    '#title': Example!
+    '#as': h2
+    '#attributes': {  }
+    '#modifiers': {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#content':
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        - {  }
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
+'#link': ~
+'#modifiers': {  }
+'#attributes':
+    class:
+        - mx-card--collapse
+'#cache':
+    contexts: {  }
+    tags: {  }
+    max-age: -1
