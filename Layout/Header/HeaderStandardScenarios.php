@@ -36,8 +36,8 @@ final class HeaderStandardScenarios {
     );
     $header->navigationType = NavigationType::Dropdown;
 
-    $header->containerAttributes['hello'] = 'world';
-    $header->containerAttributes['class'][] = 'foo';
+    $header->containerAttributes->setAttribute('hello', 'world');
+    $header->containerAttributes->addClass('foo');
 
     return $header;
   }

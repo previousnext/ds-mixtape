@@ -21,7 +21,7 @@ class Grid extends CommonLayout\Grid\Grid implements Utility\MixtapeObjectInterf
     foreach ($this->modifiers as $modifier) {
       if ($modifier instanceof ModifierClassInterface) {
         // Attribute guarantees 'class' offset exists.
-        $this->containerAttributes['class'][] = $modifier->className();
+        $this->containerAttributes->addClass($modifier->className());
       }
     }
 

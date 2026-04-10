@@ -83,7 +83,7 @@ class Page extends AbstractCollection implements Utility\MixtapeObjectInterface 
     $url->expects('toString')->andReturn('http://example.com/');
 
     // @fixme workaround scoping bug with `_class_handler.twig`
-    $this->containerAttributes['fixme'] = 'fixme';
+    $this->containerAttributes->setAttribute('fixme', 'fixme');
 
     $icon = CommonAtoms\Icon\Icon::create('chevron-down');
 

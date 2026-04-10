@@ -25,7 +25,7 @@ class Icon extends CommonAtom\Icon\Icon implements Utility\MixtapeObjectInterfac
 
     $iconSizeEnum = $this->modifiers->getFirstInstanceOf(IconSize::class);
     if ($iconSizeEnum !== NULL) {
-      $this->containerAttributes['class'][] = $iconSizeEnum->className();
+      $this->containerAttributes->addClass($iconSizeEnum->className());
     }
 
     return $build

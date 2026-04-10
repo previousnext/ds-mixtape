@@ -17,7 +17,7 @@ final class PageScenarios {
       ['#markup' => 'Test Title!'],
       'Foo Bar',
     );
-    $instance->containerAttributes['foo'] = 'bar';
+    $instance->containerAttributes->setAttribute('foo', 'bar');
     return $instance;
   }
 
