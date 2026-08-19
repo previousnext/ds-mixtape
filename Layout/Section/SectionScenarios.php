@@ -27,34 +27,14 @@ final class SectionScenarios {
   }
 
   final public static function sectionSizing(): \Generator {
-    foreach (SectionSize::cases() as $sectionSize) {
+    foreach ([...SectionSize::cases(), ...SectionSizeTop::cases(), ...SectionSizeBottom::cases()] as $sectionSize) {
       $instance = Layout\Section\Section::create(
         heading: 'Section title',
         as: Layout\Section\SectionType::Section,
       );
       $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
       $instance->modifiers[] = $sectionSize;
-      yield $sectionSize->name => $instance;
-    }
-
-    foreach (SectionSizeTop::cases() as $sectionSizeTop) {
-      $instance = Layout\Section\Section::create(
-        heading: 'Section title',
-        as: Layout\Section\SectionType::Section,
-      );
-      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
-      $instance->modifiers[] = $sectionSizeTop;
-      yield 'Top' . $sectionSizeTop->name => $instance;
-    }
-
-    foreach (SectionSizeBottom::cases() as $sectionSizeBottom) {
-      $instance = Layout\Section\Section::create(
-        heading: 'Section title',
-        as: Layout\Section\SectionType::Section,
-      );
-      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
-      $instance->modifiers[] = $sectionSizeBottom;
-      yield 'Bottom' . $sectionSizeBottom->name => $instance;
+      yield \sprintf('%s-%s', (new \ReflectionClass($sectionSize::class))->getShortName(), $sectionSize->name) => $instance;
     }
   }
 
