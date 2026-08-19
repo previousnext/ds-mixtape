@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\Atom\Button;
 
+use Drupal\Core\Template\Attribute;
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Atom as CommonAtom;
+use PreviousNext\Ds\Common\Atom\Button\ButtonModifierInterface;
 use PreviousNext\Ds\Common\Atom\Button\ButtonType;
+use PreviousNext\Ds\Common\Modifier;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
@@ -19,6 +22,31 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 class Button extends CommonAtom\Button\Button implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
+
+  public static function createLink(
+    string $title,
+    ?string $href = NULL,
+    ?CommonAtom\Button\ButtonStyle $style = NULL,
+    ?CommonAtom\Button\ButtonLayout $layout = NULL,
+    ?CommonAtom\Icon\Icon $iconStart = NULL,
+    ?CommonAtom\Icon\Icon $iconEnd = NULL,
+  ): CommonAtom\Button\Button {
+    $link = CommonAtom\Button\Button::factoryCreate(
+      title: $title,
+      href: $href,
+      as: ButtonType::Link,
+      disabled: FALSE,
+      iconOnly: FALSE,
+      iconStart: $iconStart,
+      iconEnd: $iconEnd,
+      modifiers: new Modifier\ModifierBag(ButtonModifierInterface::class),
+      containerAttributes: new Attribute(),
+    );
+    foreach (\array_filter([$style, $layout]) as $modifier) {
+      $link->modifiers[] = $modifier;
+    }
+    return $link;
+  }
 
   protected function build(Slots\Build $build): Slots\Build {
     $as = \strtolower(match ($this->as) {

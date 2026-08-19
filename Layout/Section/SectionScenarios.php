@@ -36,6 +36,26 @@ final class SectionScenarios {
       $instance->modifiers[] = $sectionSize;
       yield $sectionSize->name => $instance;
     }
+
+    foreach (SectionSizeTop::cases() as $sectionSizeTop) {
+      $instance = Layout\Section\Section::create(
+        heading: 'Section title',
+        as: Layout\Section\SectionType::Section,
+      );
+      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
+      $instance->modifiers[] = $sectionSizeTop;
+      yield 'Top' . $sectionSizeTop->name => $instance;
+    }
+
+    foreach (SectionSizeBottom::cases() as $sectionSizeBottom) {
+      $instance = Layout\Section\Section::create(
+        heading: 'Section title',
+        as: Layout\Section\SectionType::Section,
+      );
+      $instance[] = Atom\Html\Html::create(Markup::create('<div>Section <strong>contents</strong></div>'));
+      $instance->modifiers[] = $sectionSizeBottom;
+      yield 'Bottom' . $sectionSizeBottom->name => $instance;
+    }
   }
 
   final public static function sectionWidth(): \Generator {

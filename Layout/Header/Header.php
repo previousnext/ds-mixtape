@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace PreviousNext\Ds\Mixtape\Layout\Header;
 
 use Pinto\Attribute\Asset\Css;
+use Pinto\Attribute\Asset\Js;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Common\Component as CommonComponent;
@@ -15,6 +16,7 @@ use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
 #[Css('header.css', preprocess: TRUE)]
+#[Js('header.entry.js', preprocess: TRUE, attributes: ['type' => 'module'])]
 #[Slots\Attribute\ModifySlots(add: [
   new Slots\Slot('stacked'),
   new Slots\Slot('attributes'),

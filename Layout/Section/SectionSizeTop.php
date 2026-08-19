@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\Layout\Section;
 
-enum SectionSize implements SectionSizeInterface {
+enum SectionSizeTop implements SectionSizeInterface {
 
   case S;
   case M;
@@ -16,10 +16,10 @@ enum SectionSize implements SectionSizeInterface {
    */
   public function modifierName(): string {
     return match ($this) {
-      static::S => 's',
-      static::M => 'm',
-      static::L => 'l',
-      static::XL => 'xl',
+      static::S => 'top-s',
+      static::M => 'top-m',
+      static::L => 'top-l',
+      static::XL => 'top-xl',
     };
   }
 

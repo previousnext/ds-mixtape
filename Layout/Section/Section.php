@@ -27,7 +27,7 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
     $sectionBackground = $this->modifiers->getFirstInstanceOf(SectionBackground::class);
 
     $modifiers = [];
-    foreach ($this->modifiers->getInstancesOf(SectionSize::class) as $sectionSize) {
+    foreach ($this->modifiers->getInstancesOf(SectionSizeInterface::class) as $sectionSize) {
       $modifiers[] = $sectionSize->modifierName();
     }
     foreach ($this->modifiers->getInstancesOf(SectionWidth::class) as $sectionWidth) {
