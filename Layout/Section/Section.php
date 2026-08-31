@@ -37,9 +37,9 @@ class Section extends CommonLayouts\Section\Section implements Utility\MixtapeOb
     return parent::build($build)
       ->set('background', $sectionBackground?->modifierName())
       ->set('isContainer', $this->isContainer)
-      ->set('content', Html::createFromCollection($this->map(static function (CommonLayouts\Section\SectionItem $item): mixed {
+      ->set('content', $this->count() > 0 ? Html::createFromCollection($this->map(static function (CommonLayouts\Section\SectionItem $item): mixed {
         return \is_callable($item->content) ? ($item->content)() : $item->content;
-      })))
+      })) : NULL)
       ->set('link', $this->link)
       ->set('heading', $this->heading)
       ->set('modifiers', $modifiers)
