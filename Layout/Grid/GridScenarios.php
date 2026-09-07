@@ -15,7 +15,7 @@ use PreviousNext\IdsTools\Scenario\Scenario;
 
 final class GridScenarios {
 
-  #[Scenario(viewPortWidth: 1000, viewPortHeight: 800)]
+  #[Scenario(viewPortWidth: 1200, viewPortHeight: 800)]
   final public static function cardGrid(): \Generator {
     $url = \Mockery::mock(Url::class);
     $url->expects('toString')->andReturn('http://example.com/');
