@@ -3,18 +3,66 @@
     library:
         - pinto/b6a98ae948-MixtapeComponents-Tags
 '#items':
-    -
-        title: 'Tag 1'
-        href: 'http://example.com/'
-    -
-        title: 'Tag 2'
-        href: 'http://example.com/'
-    -
-        title: 'Tag 3'
-        href: 'http://example.com/'
-'#containerAttributes': {  }
-'#type': link
-'#__twigTypeVar': link
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TagItem
+            '#attached':
+                library:
+                    - pinto/b6a98ae948-MixtapeComponents-TagItem
+            '#item':
+                title: 'Tag 1'
+                href: 'http://example.com/'
+            '#type': link
+            '#tagAttributes': {  }
+            '#dismissible': false
+            '#removeLabel': ~
+            '#__twigTypeVar': link
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TagItem
+            '#attached':
+                library:
+                    - pinto/b6a98ae948-MixtapeComponents-TagItem
+            '#item':
+                title: 'Tag 2'
+                href: 'http://example.com/'
+            '#type': link
+            '#tagAttributes': {  }
+            '#dismissible': false
+            '#removeLabel': ~
+            '#__twigTypeVar': link
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TagItem
+            '#attached':
+                library:
+                    - pinto/b6a98ae948-MixtapeComponents-TagItem
+            '#item':
+                title: 'Tag 3'
+                href: 'http://example.com/'
+            '#type': link
+            '#tagAttributes': {  }
+            '#dismissible': false
+            '#removeLabel': ~
+            '#__twigTypeVar': link
+            '#cache':
+                contexts: {  }
+                tags: {  }
+                max-age: -1
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#attributes': {  }
 '#cache':
     contexts: {  }

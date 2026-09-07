@@ -97,12 +97,15 @@ enum MixtapeComponents implements ObjectListInterface {
   #[Definition(Component\Tags\Tags::class)]
   case Tags;
 
+  #[Definition(Component\Tags\TagItem\TagItem::class)]
+  case TagItem;
+
   #[Definition(Component\UtilityList\UtilityList::class)]
   #[DependencyOn(self::Navigation)]
   case UtilityList;
 
   private function dsDirectory(): string {
-    if ($this === MixtapeComponents::Tags) {
+    if ($this === MixtapeComponents::Tags || $this === MixtapeComponents::TagItem) {
       return 'Component/Tag';
     }
 

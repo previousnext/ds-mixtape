@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Component\Pagination;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Component as CommonComponents;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -16,5 +17,10 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 class Pagination extends CommonComponents\Pagination\Pagination implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
+
+  protected function build(Slots\Build $build): Slots\Build {
+    return $build
+      ->set('pages', Html::createFromCollection($this));
+  }
 
 }

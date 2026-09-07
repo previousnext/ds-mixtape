@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Component\Accordion;
 
 use Pinto\Attribute\Asset;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -19,6 +20,7 @@ class Accordion extends CommonComponent\Accordion\Accordion implements Utility\M
 
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
+      ->set('items', Html::createFromCollection($this))
       ->set('title', $this->title);
   }
 

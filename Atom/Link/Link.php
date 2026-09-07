@@ -9,6 +9,9 @@ use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
+#[Slots\Attribute\ModifySlots(add: [
+  'listItem',
+])]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Scenarios(scenarios: [
   CommonAtoms\Link\LinkScenarios::class,
@@ -16,6 +19,8 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 class Link extends CommonAtoms\Link\Link implements Utility\MixtapeObjectInterface {
 
   use Utility\ObjectTrait;
+
+  public bool $asListItem;
 
   /**
    * @phpstan-param mixed ...$args
@@ -32,6 +37,13 @@ class Link extends CommonAtoms\Link\Link implements Utility\MixtapeObjectInterfa
     }
 
     return $instance;
+  }
+
+  protected function build(Slots\Build $build): Slots\Build {
+    $this->asListItem ??= FALSE;
+
+    return parent::build($build)
+      ->set('listItem', $this->asListItem);
   }
 
 }

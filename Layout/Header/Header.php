@@ -50,7 +50,7 @@ class Header extends CommonLayouts\Header\Header implements Utility\MixtapeObjec
       ->set(HeaderSlots::description, $this->description)
       ->set(HeaderSlots::search, $this->hasSearch ? CommonComponent\SearchForm\SearchForm::create('/search-for-common') : NULL)
       ->set(HeaderSlots::navigation, $navigation)
-      ->set(HeaderSlots::controls, $this->controls->map(static fn (CommonAtoms\Button\Button $button): mixed => $button())->toArray())
+      ->set(HeaderSlots::controls, CommonAtoms\Html\Html::createFromCollection($this->controls->map(static fn (CommonAtoms\Button\Button $button): mixed => $button())->toArray()))
       ->set('attributes', $this->containerAttributes)
       ->set('stacked', $headerLayout === HeaderLayout::Stacked);
   }

@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Component\Tabs;
 
 use Pinto\Attribute\Asset;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Common\Component\Tabs\Tab;
 use PreviousNext\Ds\Common\Component\Tabs\TabItem\TabItem;
@@ -25,21 +26,20 @@ class Tabs extends CommonComponent\Tabs\Tabs implements Utility\MixtapeObjectInt
       $this->active = $this->first();
     }
 
-    /** @var array<TabItem> $tabs */
-    $tabs = $this->map(function (Tab $item): mixed {
+    $tabs = $this->map(function (Tab $item): TabItem {
       /** @var \PreviousNext\Ds\Mixtape\Component\Tabs\TabsItem\TabsItem $tabItem */
       $tabItem = TabItem::create((string) $item->id, $item->title, $item);
       // Mixtape sets active on the TabItem, not TabListItem.
       $tabItem->active = $this->active === $item;
-      return $tabItem();
-    })->toArray();
+      return $tabItem;
+    });
 
     return $build
       ->set('id', $this->id)
       ->set('title', $this->title)
       // Mixtape does not use this.
       ->set('listItems', [])
-      ->set('items', $tabs);
+      ->set('items', Html::createFromCollection($tabs));
   }
 
 }

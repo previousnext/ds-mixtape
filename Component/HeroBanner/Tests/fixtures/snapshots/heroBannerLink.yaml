@@ -40,6 +40,7 @@
     '#iconStart': ~
     '#iconEnd': ~
     '#attributes': {  }
+    '#listItem': false
     '#cache':
         contexts: {  }
         tags: {  }

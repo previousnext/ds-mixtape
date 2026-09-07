@@ -3,79 +3,88 @@
     library:
         - pinto/d1e0ff8fb4-MixtapeLayouts-Grid
 '#items':
-    -
-        '#theme': d1e0ff8fb4-MixtapeLayouts-GridItem
-        '#attached':
-            library:
-                - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
-        '#item':
-            '#theme': c2e75f8655-CommonAtoms-Html
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        -
+            '#theme': d1e0ff8fb4-MixtapeLayouts-GridItem
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Html
-            '#items':
-                -
-                    '#theme': c2e75f8655-CommonAtoms-Html
-                    '#attached':
-                        library:
-                            - pinto/c2e75f8655-CommonAtoms-Html
-                    '#items':
-                        - {  }
-                    '#cache':
-                        contexts: {  }
-                        tags: {  }
-                        max-age: -1
+                    - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
+            '#item':
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    -
+                        '#theme': c2e75f8655-CommonAtoms-Html
+                        '#attached':
+                            library:
+                                - pinto/c2e75f8655-CommonAtoms-Html
+                        '#items':
+                            - {  }
+                        '#cache':
+                            contexts: {  }
+                            tags: {  }
+                            max-age: -1
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#isContainer': true
+            '#modifiers': {  }
+            '#as': li
+            '#attributes': {  }
             '#cache':
                 contexts: {  }
                 tags: {  }
                 max-age: -1
-        '#isContainer': true
-        '#modifiers': {  }
-        '#as': li
-        '#attributes': {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
-    -
-        '#theme': d1e0ff8fb4-MixtapeLayouts-GridItem
-        '#attached':
-            library:
-                - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
-        '#item':
-            '#theme': c2e75f8655-CommonAtoms-Html
+        -
+            '#theme': d1e0ff8fb4-MixtapeLayouts-GridItem
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Html
-            '#items':
-                -
-                    '#theme': c2e75f8655-CommonAtoms-Html
-                    '#attached':
-                        library:
-                            - pinto/c2e75f8655-CommonAtoms-Html
-                    '#items':
-                        - {  }
-                    '#cache':
-                        contexts: {  }
-                        tags: {  }
-                        max-age: -1
+                    - pinto/d1e0ff8fb4-MixtapeLayouts-GridItem
+            '#item':
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    -
+                        '#theme': c2e75f8655-CommonAtoms-Html
+                        '#attached':
+                            library:
+                                - pinto/c2e75f8655-CommonAtoms-Html
+                        '#items':
+                            - {  }
+                        '#cache':
+                            contexts: {  }
+                            tags: {  }
+                            max-age: -1
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#isContainer': true
+            '#modifiers': {  }
+            '#as': div
+            '#attributes':
+                foo:
+                    value: gibar
+                class:
+                    - 'gi hello'
+                    - 'gi world'
             '#cache':
                 contexts: {  }
                 tags: {  }
                 max-age: -1
-        '#isContainer': true
-        '#modifiers': {  }
-        '#as': div
-        '#attributes':
-            foo:
-                value: gibar
-            class:
-                - 'gi hello'
-                - 'gi world'
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#modifiers': {  }
 '#as': ul
 '#attributes': {  }

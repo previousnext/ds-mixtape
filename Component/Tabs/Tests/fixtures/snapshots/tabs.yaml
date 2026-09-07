@@ -18,102 +18,111 @@
         max-age: -1
 '#listItems': {  }
 '#items':
-    -
-        '#theme': b6a98ae948-MixtapeComponents-TabItem
-        '#attached':
-            library:
-                - pinto/b6a98ae948-MixtapeComponents-TabItem
-        '#title': 'Tab 1'
-        '#content':
-            '#theme': c2e75f8655-CommonAtoms-Html
+    '#theme': c2e75f8655-CommonAtoms-Html
+    '#attached':
+        library:
+            - pinto/c2e75f8655-CommonAtoms-Html
+    '#items':
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TabItem
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Html
-            '#items':
-                - 'Tab 1 contents!'
+                    - pinto/b6a98ae948-MixtapeComponents-TabItem
+            '#title': 'Tab 1'
+            '#content':
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    - 'Tab 1 contents!'
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#id': id
+            '#active': false
+            '#attributes': {  }
             '#cache':
                 contexts: {  }
                 tags: {  }
                 max-age: -1
-        '#id': id
-        '#active': false
-        '#attributes': {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
-    -
-        '#theme': b6a98ae948-MixtapeComponents-TabItem
-        '#attached':
-            library:
-                - pinto/b6a98ae948-MixtapeComponents-TabItem
-        '#title': 'Tab 2'
-        '#content':
-            '#theme': c2e75f8655-CommonAtoms-Html
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TabItem
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Html
-            '#items':
-                - 'Tab 2 contents!'
+                    - pinto/b6a98ae948-MixtapeComponents-TabItem
+            '#title': 'Tab 2'
+            '#content':
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    - 'Tab 2 contents!'
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#id': id--2
+            '#active': true
+            '#attributes': {  }
             '#cache':
                 contexts: {  }
                 tags: {  }
                 max-age: -1
-        '#id': id--2
-        '#active': true
-        '#attributes': {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
-    -
-        '#theme': b6a98ae948-MixtapeComponents-TabItem
-        '#attached':
-            library:
-                - pinto/b6a98ae948-MixtapeComponents-TabItem
-        '#title': 'Tab 3'
-        '#content':
-            '#theme': c2e75f8655-CommonAtoms-Html
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TabItem
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Html
-            '#items':
-                - 'Tab 3 contents!'
+                    - pinto/b6a98ae948-MixtapeComponents-TabItem
+            '#title': 'Tab 3'
+            '#content':
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    - 'Tab 3 contents!'
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#id': id--3
+            '#active': false
+            '#attributes': {  }
             '#cache':
                 contexts: {  }
                 tags: {  }
                 max-age: -1
-        '#id': id--3
-        '#active': false
-        '#attributes': {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
-    -
-        '#theme': b6a98ae948-MixtapeComponents-TabItem
-        '#attached':
-            library:
-                - pinto/b6a98ae948-MixtapeComponents-TabItem
-        '#title': 'Tab 4'
-        '#content':
-            '#theme': c2e75f8655-CommonAtoms-Html
+        -
+            '#theme': b6a98ae948-MixtapeComponents-TabItem
             '#attached':
                 library:
-                    - pinto/c2e75f8655-CommonAtoms-Html
-            '#items':
-                - 'Tab 4 contents!'
+                    - pinto/b6a98ae948-MixtapeComponents-TabItem
+            '#title': 'Tab 4'
+            '#content':
+                '#theme': c2e75f8655-CommonAtoms-Html
+                '#attached':
+                    library:
+                        - pinto/c2e75f8655-CommonAtoms-Html
+                '#items':
+                    - 'Tab 4 contents!'
+                '#cache':
+                    contexts: {  }
+                    tags: {  }
+                    max-age: -1
+            '#id': id--4
+            '#active': false
+            '#attributes': {  }
             '#cache':
                 contexts: {  }
                 tags: {  }
                 max-age: -1
-        '#id': id--4
-        '#active': false
-        '#attributes': {  }
-        '#cache':
-            contexts: {  }
-            tags: {  }
-            max-age: -1
+    '#cache':
+        contexts: {  }
+        tags: {  }
+        max-age: -1
 '#containerAttributes':
     foo:
         value: bar

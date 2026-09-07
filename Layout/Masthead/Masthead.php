@@ -6,7 +6,9 @@ namespace PreviousNext\Ds\Mixtape\Layout\Masthead;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom;
 use PreviousNext\Ds\Common\Layout as CommonLayout;
+use PreviousNext\Ds\Mixtape\Atom\Link\Link;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
@@ -19,6 +21,16 @@ class Masthead extends CommonLayout\Masthead\Masthead implements Utility\Mixtape
 
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
+      ->set('links', Atom\Html\Html::createFromCollection($this->links->map(static function (Atom\Link\Link $item): mixed {
+        \assert($item instanceof Link);
+        $item->asListItem = TRUE;
+        return $item;
+      })->toArray()))
+      ->set('skipLinks', Atom\Html\Html::createFromCollection($this->skipLinks->map(static function (Atom\Link\Link $item): mixed {
+        \assert($item instanceof Link);
+        $item->asListItem = TRUE;
+        return $item;
+      })->toArray()))
       ->set('background', ($this->modifiers->getFirstInstanceOf(CommonLayout\Masthead\MastheadModifierInterface::class) ?? MastheadBackground::Dark)->background());
   }
 

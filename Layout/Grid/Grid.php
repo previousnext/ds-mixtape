@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Layout\Grid;
 
 use Pinto\Attribute\Asset;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Layout as CommonLayout;
 use PreviousNext\Ds\Common\Modifier\ModifierClassInterface;
 use PreviousNext\Ds\Mixtape\Utility;
@@ -26,6 +27,7 @@ class Grid extends CommonLayout\Grid\Grid implements Utility\MixtapeObjectInterf
     }
 
     return parent::build($build)
+      ->set('items', Html::createFromCollection($this))
       ->set('as', $this->as->element())
       // Mixtape `modifiers` may only contain values from
       // GridColumnSizeModifier::classPart().

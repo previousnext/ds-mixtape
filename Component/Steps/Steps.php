@@ -6,6 +6,7 @@ namespace PreviousNext\Ds\Mixtape\Component\Steps;
 
 use Pinto\Attribute\Asset;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -23,6 +24,7 @@ class Steps extends CommonComponent\Steps\Steps implements Utility\MixtapeObject
 
   protected function build(Slots\Build $build): Slots\Build {
     return parent::build($build)
+      ->set('items', Html::createFromCollection($this))
       ->set('modifiers', $this->modifiers->getInstancesOf(StepsBackground::class)->map(
         static fn (StepsBackground $modifier): string => $modifier->modifierName(),
       )->toArray());

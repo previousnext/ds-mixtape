@@ -6,8 +6,10 @@ namespace PreviousNext\Ds\Mixtape\Layout\Footer;
 
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom as CommonAtoms;
 use PreviousNext\Ds\Common\Component as CommonComponents;
 use PreviousNext\Ds\Common\Layout as CommonLayouts;
+use PreviousNext\Ds\Mixtape\Atom\Link\Link;
 use PreviousNext\Ds\Mixtape\Component\Navigation\NavigationType;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -39,6 +41,11 @@ class Footer extends CommonLayouts\Footer\Footer implements Utility\MixtapeObjec
       ->set('background', ($this->modifiers->getFirstInstanceOf(FooterBackground::class) ?? FooterBackground::Dark)->background())
       ->set('containerAttributes', $this->containerAttributes)
       ->set('logo', \array_shift($logos))
+      ->set('links', CommonAtoms\Html\Html::createFromCollection($this->links->map(static function (CommonAtoms\Link\Link $item): mixed {
+        \assert($item instanceof Link);
+        $item->asListItem = TRUE;
+        return $item();
+      })->toArray()))
       ->set('socials', $this->socialLinks)
       ->set('modifiers', $this->modifiers)
       ->set('description', $this->description)

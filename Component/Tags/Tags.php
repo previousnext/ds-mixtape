@@ -7,6 +7,7 @@ namespace PreviousNext\Ds\Mixtape\Component\Tags;
 use Drupal\Core\Template\Attribute;
 use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
+use PreviousNext\Ds\Common\Atom\Html\Html;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
@@ -17,14 +18,7 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
  */
 #[Css('tag.css', preprocess: FALSE)]
 #[Slots\Attribute\RenameSlot(original: 'tags', new: 'items')]
-#[Slots\Attribute\ModifySlots(add: [
-  // Cant use 'type' directly as Drupal uses #type, which causes our object to be both a theme and a type. The '#type' is nulled then set in a preprocessor.
-  'type',
-  // PnxCommonHooks::RENDER_ARRAY_KEY_TO_TWIG_TYPE:
-  '__twigTypeVar',
-  // Add a new attributes slot for individual items.
-  'attributes',
-])]
+#[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Scenarios([
   CommonComponent\Tags\TagsScenarios::class,
   TagsScenarios::class,
@@ -35,33 +29,36 @@ class Tags extends CommonComponent\Tags\Tags implements Utility\MixtapeObjectInt
 
   public TagTypes $tagType;
   public Attribute $tagAttributes;
+  public bool $dismissible;
+  public ?string $removeLabel;
 
   protected function build(Slots\Build $build): Slots\Build {
     $this->tagType ??= TagTypes::Text;
+    $this->dismissible ??= FALSE;
+    $this->removeLabel ??= NULL;
 
-    $tags = $this->map(function (CommonComponent\Tags\Tag|CommonComponent\Tags\CheckboxTag|CommonComponent\Tags\LinkTag $tag): mixed {
-      return $this->tagType === TagTypes::Text
+    $items = $this->map(function (CommonComponent\Tags\Tag|CommonComponent\Tags\CheckboxTag|CommonComponent\Tags\LinkTag $tag): TagItem\TagItem {
+      $item = $this->tagType === TagTypes::Text
         ? match (TRUE) {
           $tag instanceof CommonComponent\Tags\Tag => $tag->title,
           $tag instanceof CommonComponent\Tags\CheckboxTag => $tag->label,
           $tag instanceof CommonComponent\Tags\LinkTag => $tag->title,
         }
         : $tag;
+
+      return TagItem\TagItem::create(
+        item: $item,
+        type: $this->tagType,
+        // Clone so each item gets its own attribute bag; the twig template
+        // mutates it (adds classes) on render.
+        tagAttributes: clone ($this->tagAttributes ?? new Attribute()),
+        dismissible: $this->dismissible,
+        removeLabel: $this->removeLabel,
+      );
     })->toArray();
 
     return $build
-      ->set('tags', $tags)
-      ->set('attributes', match ($this->tagType) {
-        // Checkboxes, $tagAttributes is unused; reserved for future use.
-        TagTypes::Checkbox => $this->containerAttributes,
-        // Text and Link do not have an overall container. $containerAttributes is unused.
-        TagTypes::Text, TagTypes::Link => $this->tagAttributes ?? new Attribute(),
-      })
-      // Same type for all items, maybe it should be per tag?
-      // Cant pass this as '#type' is reserved in Drupal.
-      // When running outside of Drupal, type should be set as preprocessor won't work.
-      ->set('type', \class_exists(\Drupal::class) ? $this->tagType->typeName() : NULL)
-      ->set('__twigTypeVar', $this->tagType->typeName());
+      ->set('tags', Html::createFromCollection($items));
   }
 
 }
