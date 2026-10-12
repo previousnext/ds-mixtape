@@ -38,7 +38,7 @@
                 '#iconStart': ~
                 '#iconEnd': ~
                 '#attributes': {  }
-                '#listItem': true
+                '#listItem': false
                 '#cache':
                     contexts: {  }
                     tags: {  }
