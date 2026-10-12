@@ -18,7 +18,6 @@ jobs:
       - uses: "shivammathur/setup-php@v2"
         with:
           php-version: ${{ matrix.php-versions }}
-          coverage: xdebug
         env:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup problem matchers for PHP
