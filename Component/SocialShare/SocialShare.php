@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace PreviousNext\Ds\Mixtape\Component\SocialShare;
 
+use Pinto\Attribute\Asset\Css;
 use Pinto\Slots;
 use PreviousNext\Ds\Common\Component as CommonComponent;
 use PreviousNext\Ds\Mixtape\Utility;
 use PreviousNext\IdsTools\Scenario\Scenarios;
 
+#[Css('social-share.css', preprocess: FALSE)]
 #[Slots\Attribute\ModifySlots(add: [
   new Slots\Slot(SocialMedia::Facebook, defaultValue: NULL),
   new Slots\Slot(SocialMedia::LinkedIn, defaultValue: NULL),
