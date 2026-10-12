@@ -11,6 +11,7 @@ use PreviousNext\Ds\Mixtape\Utility;
 
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
 #[Slots\Attribute\RenameSlot(original: 'content', new: 'item')]
+#[Slots\Attribute\RenameSlot(original: 'isContainer', new: 'container')]
 class GridItem extends CommonLayout\Grid\GridItem\GridItem implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 

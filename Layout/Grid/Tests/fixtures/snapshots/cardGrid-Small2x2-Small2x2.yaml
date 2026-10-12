@@ -126,7 +126,7 @@
                     contexts: {  }
                     tags: {  }
                     max-age: -1
-            '#isContainer': true
+            '#container': true
             '#modifiers': {  }
             '#as': div
             '#attributes': {  }
@@ -252,7 +252,7 @@
                     contexts: {  }
                     tags: {  }
                     max-age: -1
-            '#isContainer': true
+            '#container': true
             '#modifiers': {  }
             '#as': div
             '#attributes': {  }

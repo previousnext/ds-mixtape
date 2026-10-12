@@ -14,7 +14,10 @@ use PreviousNext\IdsTools\Scenario\Scenarios;
 
 #[Asset\Css('grid.css', preprocess: TRUE)]
 #[Slots\Attribute\RenameSlot(original: 'containerAttributes', new: 'attributes')]
-#[Scenarios([CommonLayout\Grid\GridScenarios::class, GridScenarios::class])]
+#[Scenarios(scenarios: [
+  CommonLayout\Grid\GridScenarios::class,
+  GridScenarios::class,
+])]
 class Grid extends CommonLayout\Grid\Grid implements Utility\MixtapeObjectInterface {
   use Utility\ObjectTrait;
 

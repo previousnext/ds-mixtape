@@ -34,7 +34,7 @@
                     contexts: {  }
                     tags: {  }
                     max-age: -1
-            '#isContainer': true
+            '#container': true
             '#modifiers': {  }
             '#as': li
             '#attributes': {  }
@@ -68,7 +68,7 @@
                     contexts: {  }
                     tags: {  }
                     max-age: -1
-            '#isContainer': true
+            '#container': true
             '#modifiers': {  }
             '#as': div
             '#attributes':
