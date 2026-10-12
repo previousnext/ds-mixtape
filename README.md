@@ -16,3 +16,5 @@ composer require previousnext/ds-mixtape
 [![Latest Stable Version](https://poser.pugx.org/previousnext/ds-mixtape/v)](https://packagist.org/packages/previousnext/ds-mixtape)
 [![Total Downloads](https://poser.pugx.org/previousnext/ds-mixtape/downloads)](https://packagist.org/packages/previousnext/ds-mixtape)
 [![License](https://poser.pugx.org/previousnext/ds-mixtape/license)](https://packagist.org/packages/previousnext/ds-mixtape)
+
+[Documentation](https://previousnext.github.io/interchangeable-ds/mixtape/) is available for the Mixtape design system.
