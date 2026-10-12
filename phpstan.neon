@@ -16,7 +16,7 @@ parameters:
 		- vendor/drupal/pinto
 	reportUnmatchedIgnoredErrors: true
 	ignoreErrors:
-		- identifier: varTag.type
+		- '#Method.*static\(.*but returns.*\.#'
 		- identifier: classConstant.notFound
 	stubFiles:
 		- .phpstan/stubs/Drupal.stub

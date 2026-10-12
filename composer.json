@@ -3,7 +3,7 @@
     "type": "library",
     "minimum-stability": "beta",
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "previousnext/ds-common": "*@dev"
     },
     "require-dev": {
